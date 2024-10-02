@@ -1,0 +1,17 @@
+footer{
+    background-color: var(--color-1);
+    color: var(--color-3);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    .rs{
+        margin-bottom: 0;
+    }
+
+    @media (max-width:767px) {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        .col:not(:last-of-type){
+            margin-bottom: 15px;
+        }
+    }
+}
