@@ -67,9 +67,9 @@ const index = () => {
               <Row>
                 <PorcentajeCircular p={90}>NodeJs</PorcentajeCircular>
                 <PorcentajeCircular p={85}>NextJs</PorcentajeCircular>
-                <PorcentajeCircular p={73}>Shopify</PorcentajeCircular>
+                <PorcentajeCircular p={85}>React</PorcentajeCircular>
                 <PorcentajeCircular p={96}>Wordpress</PorcentajeCircular>
-                <PorcentajeCircular p={86}>MongoDB <br/> MySQL</PorcentajeCircular>
+                {/* <PorcentajeCircular p={86}>MongoDB <br/> MySQL</PorcentajeCircular> */}
               </Row>
             </Container>
             <H h="40px"/>
@@ -79,18 +79,23 @@ const index = () => {
             <TextList
               title="Npm Packages"
               list={[
-                <a href="https://www.npmjs.com/package/fmiddlewares" target="_blank">fmiddlewares</a>,
+                <a href="https://www.npmjs.com/package/fenextjs" target="_blank">fenextjs</a>,
+                <a href="https://www.npmjs.com/package/fenextjs-component" target="_blank">fenextjs-component</a>,
+                <a href="https://www.npmjs.com/package/fenextjs-hook" target="_blank">fenextjs-hook</a>,
+                <a href="https://www.npmjs.com/package/fenextjs-functions" target="_blank">fenextjs-functions</a>,
+                <a href="https://www.npmjs.com/package/fenextjs-validator" target="_blank">fenextjs-validator</a>,
+                <a href="https://www.npmjs.com/package/fenextjs-firebase" target="_blank">fenextjs-firebase</a>,
+                <a href="https://fenextjs-doc.vercel.app/" target="_blank">fenextjs-doc</a>,
                 <a href="https://www.npmjs.com/package/uselocalstoragenextjs" target="_blank">uselocalstoragenextjs</a>,
-                <a href="https://www.npmjs.com/package/world-phones" target="_blank">world-phones</a>,
                 <a href="https://www.npmjs.com/package/country-state-city-nextjs" target="_blank">country-state-city-nextjs</a>,
               ]}
             />
-            <TextList
+            {/* <TextList
               title="Comunidad"
               list={[
                 <a href="https://gitlab.com/franciscoblancojn/templatenextjs" target="_blank">Templatenextjs</a>,
               ]}
-            />
+            /> */}
             <TextList
               title="Mooveri"
               list={[
@@ -127,34 +132,32 @@ const index = () => {
                 <a href="https://takeprofi-api.herokuapp.com/" target="_blank">Takeprofit Api</a>,
               ]}
             />
-            <TextList
+            {/* <TextList
               title="Marketinghacking"
               list={[
                 <a href="https://marketinghacking.academy/" target="_blank">Marketinghacking Web</a>,
               ]}
-            />
+            /> */}
             <TextList
               title="Aveonline"
               list={[
                 <a href="https://gitlab.com/franciscoblancojn/aveonline" target="_blank">Aveonline Plugin Wordpress</a>,
-                <a href="https://gitlab.com/franciscoblancojn/aveonline-shopify-app" target="_blank">Aveonline App Shopify</a>,
-                <a href="https://gitlab.com/franciscoblancojn/aveonline-shopify-nodejs" target="_blank">Aveonline Api Nodejs</a>,
                 <a href="https://gitlab.com/franciscoblancojn/dropshippingaveonline" target="_blank">Aveonline Drop Shipping</a>,
               ]}
             />
-            <TextList
+            {/* <TextList
               title="Elios"
               list={[
                 <a href="https://gitlab.com/eliosapp/page-next" target="_blank">Elios Repositorio</a>,
                 <a href="https://app.eliosanalytics.com/" target="_blank">Elios Web</a>,
                 <a href="https://gitlab.com/eliosapp/plugin-wordpress" target="_blank">Elios Plugin Wordpress</a>,
               ]}
-            />
+            /> */}
             <Title>
               Experiencia Laboral
             </Title>
             <TextList
-              title="Desarrollador Web, Startscoinc"
+              title="Desarrollador Web, Byte4bit"
               date="2020 - actualidad"
               list={[
                 "Desarrollo de Paginas Web en NextJs",
@@ -163,8 +166,6 @@ const index = () => {
                 "Manejo de Base de Datos MongoDB",
                 "Desarrollo de Paginas Web en Wordpress",
                 "Desarrollo de Plugins para Wordpress",
-                "Desarrollo de Paginas Web en Shopify",
-                "Desarrollo de App para Shopify",
                 "Desarrollo del App Elios",
                 "Desarrollo de App Movil con Flutter",
               ]}
@@ -183,7 +184,6 @@ const index = () => {
               list={[
                 "Desarrollo de Paginas Web en Wordpress",
                 "Desarrollo de Plugins para Wordpress",
-                "Desarrollo de Paginas Web en Shopify",
               ]}
             />
             <Title>Formacion Academica</Title>
@@ -228,13 +228,19 @@ const index = () => {
           <Col col={4} className="aside col-xl-6 col-lg-12" style={{paddingTop:"50px",paddingBottom:"50px"}}>
             <Title>Mi Perfil</Title>
             <p>
-              Soy un <strong>Desarrollador Web</strong> con 3 año de experiencia, estudié un tiempo Ingenieria en Sistema en UNET, lo deje a un lado por una oportunidad de trabajo, era la primera vez que desarrollaba web, es muy apasionante.
+              Soy un <strong>Desarrollador Web</strong> con 5 año de experiencia, estudié un tiempo Ingenieria en Sistema en UNET, lo deje a un lado por una oportunidad de trabajo, era la primera vez que desarrollaba web, es muy apasionante.
             </p>
             <p>
               Inicie trabajando en Wordpress, luego me fui especializando en JS, es mi lenguaje preferido, me encanta el hecho que puede trabajar en Frontend y Backend al mismo tiempo con JS.
             </p>
             <p>
               Me gusta aprender nuevas tecnologías, he probado el <strong>Desarrollo Movil</strong>, y creación de <strong>Aplicaciones de Escritorio</strong>, pero el <strong>Desarrollo Web</strong> sigue siendo mi favorito.
+            </p>
+            <p>
+              Tambien me gusta desarollar librerias de npm para la comunidad.
+              Mi mas grande orgullo es{" "}
+              <strong><a href="https://www.npmjs.com/package/fenextjs">Fenextjs</a></strong>,
+              libreria para el desarrollo de paginas web en Nextjs.
             </p>
             <H h="30px"/>
             <div>
@@ -288,7 +294,8 @@ const index = () => {
             <PorcentajeLinear p={95}>JS</PorcentajeLinear>
             <PorcentajeLinear p={90}>Sass</PorcentajeLinear>
             <PorcentajeLinear p={85}>PHP</PorcentajeLinear>
-            <PorcentajeLinear p={80}>MongoDB</PorcentajeLinear>
+            {/* <PorcentajeLinear p={80}>MongoDB</PorcentajeLinear> */}
+            <PorcentajeLinear p={85}>React</PorcentajeLinear>
             <PorcentajeLinear p={85}>Nextjs</PorcentajeLinear>
             <H h="30px"/>
             <Title>Idiomas</Title>
@@ -296,8 +303,8 @@ const index = () => {
             <PorcentajeLinear p={20}>Ingles</PorcentajeLinear>
             <H h="30px"/>
             <Title>Referencias</Title>
-            <Referencia email="agudelocjuan@gmail.com">Juan Agudelo (startscoinc)</Referencia>
-            <Referencia email="santiago@bizmerk.com">Santiago Gomez (bizmerk)</Referencia>
+            <Referencia email="agudelocjuan@gmail.com">Juan Agudelo (Byte4bit)</Referencia>
+            <Referencia email="santiago@bizmerk.com">Santiago Gomez (Bizmerk)</Referencia>
           </Col>
         </Row>
       </Container>
