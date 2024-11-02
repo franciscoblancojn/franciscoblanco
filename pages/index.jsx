@@ -1,4 +1,4 @@
-import Head from 'next/head'
+import Head from "next/head";
 
 import Banner from "@/components/banner";
 import Container from "@/components/container";
@@ -19,8 +19,17 @@ const index = () => {
       <Head>
         <title>Francisco Blanco</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <link rel="preconnect" href="https://fonts.gstatic.com"/>
-        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet"/><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap"
+          rel="stylesheet"
+        />
+        <link
+          rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+          integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+          crossorigin="anonymous"
+        />
       </Head>
       <Banner>
         <Container>
@@ -50,8 +59,12 @@ const index = () => {
               </div>
             </Col>
             <Col col={6} className="col-sm-5">
-              <div style={{textAlign:"center"}}>
-                <img src="/img/I_am.jpg" alt="Francisco Blanco" className="img img-Iam" />
+              <div style={{ textAlign: "center" }}>
+                <img
+                  src="/img/I_am.jpg"
+                  alt="Francisco Blanco"
+                  className="img img-Iam"
+                />
               </div>
             </Col>
           </Row>
@@ -59,10 +72,12 @@ const index = () => {
       </Banner>
       <Container className="content">
         <Row>
-          <Col col={8} className="col-xl-6 col-lg-12" style={{paddingTop:"50px"}}>
-            <Title>
-              Especialidades
-            </Title>
+          <Col
+            col={8}
+            className="col-xl-6 col-lg-12"
+            style={{ paddingTop: "50px" }}
+          >
+            <Title>Especialidades</Title>
             <Container>
               <Row>
                 <PorcentajeCircular p={90}>NodeJs</PorcentajeCircular>
@@ -72,22 +87,62 @@ const index = () => {
                 {/* <PorcentajeCircular p={86}>MongoDB <br/> MySQL</PorcentajeCircular> */}
               </Row>
             </Container>
-            <H h="40px"/>
-            <Title>
-              Desarrollos
-            </Title>
+            <H h="40px" />
+            <Title>Desarrollos</Title>
             <TextList
               title="Npm Packages"
               list={[
-                <a href="https://www.npmjs.com/package/fenextjs" target="_blank">fenextjs</a>,
-                <a href="https://www.npmjs.com/package/fenextjs-component" target="_blank">fenextjs-component</a>,
-                <a href="https://www.npmjs.com/package/fenextjs-hook" target="_blank">fenextjs-hook</a>,
-                <a href="https://www.npmjs.com/package/fenextjs-functions" target="_blank">fenextjs-functions</a>,
-                <a href="https://www.npmjs.com/package/fenextjs-validator" target="_blank">fenextjs-validator</a>,
-                <a href="https://www.npmjs.com/package/fenextjs-firebase" target="_blank">fenextjs-firebase</a>,
-                <a href="https://fenextjs-doc.vercel.app/" target="_blank">fenextjs-doc</a>,
-                <a href="https://www.npmjs.com/package/uselocalstoragenextjs" target="_blank">uselocalstoragenextjs</a>,
-                <a href="https://www.npmjs.com/package/country-state-city-nextjs" target="_blank">country-state-city-nextjs</a>,
+                <a
+                  href="https://www.npmjs.com/package/fenextjs"
+                  target="_blank"
+                >
+                  fenextjs
+                </a>,
+                <a
+                  href="https://www.npmjs.com/package/fenextjs-component"
+                  target="_blank"
+                >
+                  fenextjs-component
+                </a>,
+                <a
+                  href="https://www.npmjs.com/package/fenextjs-hook"
+                  target="_blank"
+                >
+                  fenextjs-hook
+                </a>,
+                <a
+                  href="https://www.npmjs.com/package/fenextjs-functions"
+                  target="_blank"
+                >
+                  fenextjs-functions
+                </a>,
+                <a
+                  href="https://www.npmjs.com/package/fenextjs-validator"
+                  target="_blank"
+                >
+                  fenextjs-validator
+                </a>,
+                <a
+                  href="https://www.npmjs.com/package/fenextjs-firebase"
+                  target="_blank"
+                >
+                  fenextjs-firebase
+                </a>,
+                <a href="https://fenextjs-doc.vercel.app/" target="_blank">
+                  fenextjs-doc
+                </a>,
+                <a
+                  href="https://www.npmjs.com/package/uselocalstoragenextjs"
+                  target="_blank"
+                >
+                  uselocalstoragenextjs
+                </a>,
+                <a
+                  href="https://www.npmjs.com/package/country-state-city-nextjs"
+                  target="_blank"
+                >
+                  country-state-city-nextjs
+                </a>,
               ]}
             />
             {/* <TextList
@@ -99,37 +154,93 @@ const index = () => {
             <TextList
               title="Mooveri"
               list={[
-                <a href="https://mooveri.com/" target="_blank">Mooveri Wordpress</a>,
-                <a href="https://app.mooveri.com/login" target="_blank">Mooveri NextJs</a>,
+                <a href="https://mooveri.com/" target="_blank">
+                  Mooveri Wordpress
+                </a>,
+                <a href="https://app.mooveri.com/login" target="_blank">
+                  Mooveri NextJs
+                </a>,
               ]}
             />
             <TextList
               title="Smarfit"
               list={[
-                <a href="https://gitlab.com/franciscoblancojn/payment-niubiz" target="_blank">Payment Niubiz</a>,
-                <a href="https://gitlab.com/franciscoblancojn/facturacion-smarfit" target="_blank">Facturacion Smarfit</a>,
-                <a href="https://gitlab.com/franciscoblancojn/analytics-smarfit" target="_blank">Analytics Smarfit</a>,
+                <a
+                  href="https://gitlab.com/franciscoblancojn/payment-niubiz"
+                  target="_blank"
+                >
+                  Payment Niubiz
+                </a>,
+                <a
+                  href="https://gitlab.com/franciscoblancojn/facturacion-smarfit"
+                  target="_blank"
+                >
+                  Facturacion Smarfit
+                </a>,
+                <a
+                  href="https://gitlab.com/franciscoblancojn/analytics-smarfit"
+                  target="_blank"
+                >
+                  Analytics Smarfit
+                </a>,
               ]}
             />
             <TextList
               title="Onetradeaday"
               list={[
-                <a href="https://gitlab.com/onetradeaday" target="_blank">Onetradeaday Repositorio</a>,
-                <a href="https://onetradeaday.vercel.app/" target="_blank">Onetradeaday Web</a>,
-                <a href="https://onetradeadaybackoffice.vercel.app/" target="_blank">Onetradeaday Backoffice</a>,
-                <a href="https://gitlab.com/onetradeaday/api" target="_blank">Onetradeaday Api Repositorio</a>,
-                <a href="https://onetradeaday.onrender.com/" target="_blank">Onetradeaday Api</a>,
+                <a href="https://gitlab.com/onetradeaday" target="_blank">
+                  Onetradeaday Repositorio
+                </a>,
+                <a href="https://onetradeaday.vercel.app/" target="_blank">
+                  Onetradeaday Web
+                </a>,
+                <a
+                  href="https://onetradeadaybackoffice.vercel.app/"
+                  target="_blank"
+                >
+                  Onetradeaday Backoffice
+                </a>,
+                <a href="https://gitlab.com/onetradeaday/api" target="_blank">
+                  Onetradeaday Api Repositorio
+                </a>,
+                <a href="https://onetradeaday.onrender.com/" target="_blank">
+                  Onetradeaday Api
+                </a>,
               ]}
             />
             <TextList
               title="Takeprofit"
               list={[
-                <a href="https://gitlab.com/franciscoblancojn/takeprofit" target="_blank">Takeprofit Repositorio</a>,
-                <a href="https://takeprofit.vercel.app/" target="_blank">Takeprofit Web</a>,
-                <a href="https://gitlab.com/franciscoblancojn/takeprofit-backoffice" target="_blank">Takeprofit Backoffice Repositorio</a>,
-                <a href="https://takeprofi-backoffice.vercel.app/" target="_blank">Takeprofit Backoffice Web</a>,
-                <a href="https://gitlab.com/franciscoblancojn/takeprofit-api" target="_blank">Takeprofit Api Repositorio</a>,
-                <a href="https://takeprofi-api.herokuapp.com/" target="_blank">Takeprofit Api</a>,
+                <a
+                  href="https://gitlab.com/franciscoblancojn/takeprofit"
+                  target="_blank"
+                >
+                  Takeprofit Repositorio
+                </a>,
+                <a href="https://takeprofit.vercel.app/" target="_blank">
+                  Takeprofit Web
+                </a>,
+                <a
+                  href="https://gitlab.com/franciscoblancojn/takeprofit-backoffice"
+                  target="_blank"
+                >
+                  Takeprofit Backoffice Repositorio
+                </a>,
+                <a
+                  href="https://takeprofi-backoffice.vercel.app/"
+                  target="_blank"
+                >
+                  Takeprofit Backoffice Web
+                </a>,
+                <a
+                  href="https://gitlab.com/franciscoblancojn/takeprofit-api"
+                  target="_blank"
+                >
+                  Takeprofit Api Repositorio
+                </a>,
+                <a href="https://takeprofi-api.herokuapp.com/" target="_blank">
+                  Takeprofit Api
+                </a>,
               ]}
             />
             {/* <TextList
@@ -141,8 +252,18 @@ const index = () => {
             <TextList
               title="Aveonline"
               list={[
-                <a href="https://gitlab.com/franciscoblancojn/aveonline" target="_blank">Aveonline Plugin Wordpress</a>,
-                <a href="https://gitlab.com/franciscoblancojn/dropshippingaveonline" target="_blank">Aveonline Drop Shipping</a>,
+                <a
+                  href="https://gitlab.com/franciscoblancojn/aveonline"
+                  target="_blank"
+                >
+                  Aveonline Plugin Wordpress
+                </a>,
+                <a
+                  href="https://gitlab.com/franciscoblancojn/dropshippingaveonline"
+                  target="_blank"
+                >
+                  Aveonline Drop Shipping
+                </a>,
               ]}
             />
             {/* <TextList
@@ -153,9 +274,7 @@ const index = () => {
                 <a href="https://gitlab.com/eliosapp/plugin-wordpress" target="_blank">Elios Plugin Wordpress</a>,
               ]}
             /> */}
-            <Title>
-              Experiencia Laboral
-            </Title>
+            <Title>Experiencia Laboral</Title>
             <TextList
               title="Desarrollador Web, Byte4bit"
               date="2020 - actualidad"
@@ -207,12 +326,7 @@ const index = () => {
             />
             <TextList
               title="Cursos en Edteam"
-              list={[
-                "HTML desde 0",
-                "CSS desde 0",
-                "JS desde 0",
-                "SASS",
-              ]}
+              list={["HTML desde 0", "CSS desde 0", "JS desde 0", "SASS"]}
             />
             <TextList
               title="Educacion Universitaria en UNET"
@@ -225,24 +339,44 @@ const index = () => {
               ]}
             />
           </Col>
-          <Col col={4} className="aside col-xl-6 col-lg-12" style={{paddingTop:"50px",paddingBottom:"50px"}}>
-            <Title>Mi Perfil</Title>
+          <Col
+            col={4}
+            className="aside col-xl-6 col-lg-12"
+            style={{ paddingTop: "50px", paddingBottom: "50px" }}
+          >
+            <Title>Perfil Profesional</Title>
             <p>
-              Soy un <strong>Desarrollador Web</strong> con 5 año de experiencia, estudié un tiempo Ingenieria en Sistema en UNET, lo deje a un lado por una oportunidad de trabajo, era la primera vez que desarrollaba web, es muy apasionante.
+              Soy <strong>Desarrollador Web</strong> con más de 5 años de
+              experiencia. Comencé mis estudios en Ingeniería de Sistemas en la
+              Universidad Nacional Experimental del Táchira (UNET), pero decidí
+              enfocarme en una oportunidad laboral que me introdujo al
+              desarrollo web. Desde entonces, esta área se ha convertido en mi
+              verdadera pasión.
             </p>
             <p>
-              Inicie trabajando en Wordpress, luego me fui especializando en JS, es mi lenguaje preferido, me encanta el hecho que puede trabajar en Frontend y Backend al mismo tiempo con JS.
+              Inicié mi carrera trabajando con WordPress, y con el tiempo me
+              especialicé en JavaScript, que hoy es mi lenguaje favorito. Me
+              entusiasma su versatilidad, ya que permite trabajar tanto en el
+              Frontend como en el Backend, facilitando la creación de
+              aplicaciones completas.
             </p>
             <p>
-              Me gusta aprender nuevas tecnologías, he probado el <strong>Desarrollo Movil</strong>, y creación de <strong>Aplicaciones de Escritorio</strong>, pero el <strong>Desarrollo Web</strong> sigue siendo mi favorito.
+              Estoy siempre en busca de aprender y adoptar nuevas tecnologías.
+              He explorado el <strong>Desarrollo Móvil</strong> y la creación de{" "}
+              <strong>Aplicaciones de Escritorio</strong>, aunque el{" "}
+              <strong>Desarrollo Web</strong> sigue siendo mi preferido.
             </p>
             <p>
-              Tambien me gusta desarollar librerias de npm para la comunidad.
-              Mi mas grande orgullo es{" "}
-              <strong><a href="https://www.npmjs.com/package/fenextjs">Fenextjs</a></strong>,
-              libreria para el desarrollo de paginas web en Nextjs.
+              Además, disfruto contribuir a la comunidad creando librerías en
+              npm. Mi proyecto más destacado es{" "}
+              <strong>
+                <a href="https://www.npmjs.com/package/fenextjs">Fenextjs</a>
+              </strong>
+              , una librería para facilitar el desarrollo de sitios web con
+              Next.js.
             </p>
-            <H h="30px"/>
+
+            <H h="30px" />
             <div>
               <RS
                 className="email"
@@ -287,7 +421,7 @@ const index = () => {
                 text="Francisco Blanco"
               />
             </div>
-            <H h="30px"/>
+            <H h="30px" />
             <Title>Competencia Tic</Title>
             <PorcentajeLinear p={85}>Linux</PorcentajeLinear>
             <PorcentajeLinear p={100}>Git</PorcentajeLinear>
@@ -297,20 +431,24 @@ const index = () => {
             {/* <PorcentajeLinear p={80}>MongoDB</PorcentajeLinear> */}
             <PorcentajeLinear p={85}>React</PorcentajeLinear>
             <PorcentajeLinear p={85}>Nextjs</PorcentajeLinear>
-            <H h="30px"/>
+            <H h="30px" />
             <Title>Idiomas</Title>
             <PorcentajeLinear p={100}>Español</PorcentajeLinear>
             <PorcentajeLinear p={20}>Ingles</PorcentajeLinear>
-            <H h="30px"/>
+            <H h="30px" />
             <Title>Referencias</Title>
-            <Referencia email="agudelocjuan@gmail.com">Juan Agudelo (Byte4bit)</Referencia>
-            <Referencia email="santiago@bizmerk.com">Santiago Gomez (Bizmerk)</Referencia>
+            <Referencia email="agudelocjuan@gmail.com">
+              Juan Agudelo (Byte4bit)
+            </Referencia>
+            <Referencia email="santiago@bizmerk.com">
+              Santiago Gomez (Bizmerk)
+            </Referencia>
           </Col>
         </Row>
       </Container>
-      <Footer/>
+      <Footer />
     </>
-  )
-}
+  );
+};
 
-export default index
+export default index;
