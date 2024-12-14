@@ -1,17 +1,21 @@
+
+@use "sass:math";
 .col{
     width: 100%;
     padding-left: 15px;
     padding-right: 15px;
+
+    $a_100_12 :math.div(100, 12);
     @for $var from 1 to 13 {
         &-#{$var}{
-            width: #{100/12 * $var * 1%};
+            width: #{$a_100_12 * $var * 1%};
         }
         
     }
     @media (max-width:1199px) {
         @for $var from 1 to 13 {
             &-xl-#{$var}{
-                width: #{100/12 * $var * 1%};
+                width: #{$a_100_12 * $var * 1%};
             }
             
         }
@@ -19,7 +23,7 @@
     @media (max-width:991px) {
         @for $var from 1 to 13 {
             &-lg-#{$var}{
-                width: #{100/12 * $var * 1%};
+                width: #{$a_100_12 * $var * 1%};
             }
             
         }
@@ -27,7 +31,7 @@
     @media (max-width:766px) {
         @for $var from 1 to 13 {
             &-md-#{$var}{
-                width: #{100/12 * $var * 1%};
+                width: #{$a_100_12 * $var * 1%};
             }
             
         }
@@ -35,7 +39,7 @@
     @media (max-width:575px) {
         @for $var from 1 to 13 {
             &-sm-#{$var}{
-                width: #{100/12 * $var * 1%};
+                width: #{$a_100_12 * $var * 1%};
             }
             
         }

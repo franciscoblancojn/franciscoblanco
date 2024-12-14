@@ -89,7 +89,7 @@ const index = () => {
             </Container>
             <H h="40px" />
             <Title>Desarrollos</Title>
-            <TextList
+            {/* <TextList
               title="Npm Packages"
               list={[
                 <a
@@ -138,7 +138,7 @@ const index = () => {
                   country-state-city-nextjs
                 </a>,
               ]}
-            />
+            /> */}
             {/* <TextList
               title="Comunidad"
               list={[
@@ -275,7 +275,7 @@ const index = () => {
                 "Desarrollo de Plugins para Wordpress",
               ]}
             />
-            <Title>Formacion Academica</Title>
+            {/* <Title>Formacion Academica</Title> */}
             {/* <TextList
               title="Cursos Online"
               list={[
@@ -298,7 +298,7 @@ const index = () => {
               title="Cursos en Edteam"
               list={["HTML desde 0", "CSS desde 0", "JS desde 0", "SASS"]}
             /> */}
-            <TextList
+            {/* <TextList
               title="Educacion Universitaria en UNET"
               list={[
                 "Ingenieria Informatica",
@@ -307,7 +307,7 @@ const index = () => {
                 "Preparador en Estructura de Datos",
                 "Preparador en Fundamentos de Logica Digital",
               ]}
-            />
+            /> */}
           </Col>
           <Col
             col={4}
@@ -400,7 +400,7 @@ const index = () => {
             <PorcentajeLinear p={85}>PHP</PorcentajeLinear>
             <PorcentajeLinear p={85}>Linux</PorcentajeLinear>
             {/* <PorcentajeLinear p={80}>MongoDB</PorcentajeLinear> */}
-            <H h="30px" />
+            {/* <H h="30px" />
             <Title>Idiomas</Title>
             <PorcentajeLinear p={100}>Español</PorcentajeLinear>
             <PorcentajeLinear p={20}>Ingles</PorcentajeLinear>
@@ -411,7 +411,7 @@ const index = () => {
             </Referencia>
             <Referencia email="santiago@bizmerk.com">
               Santiago Gomez (Bizmerk)
-            </Referencia>
+            </Referencia> */}
           </Col>
         </Row>
       </Container>
