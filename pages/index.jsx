@@ -132,12 +132,6 @@ const index = () => {
                   fenextjs-doc
                 </a>,
                 <a
-                  href="https://www.npmjs.com/package/uselocalstoragenextjs"
-                  target="_blank"
-                >
-                  uselocalstoragenextjs
-                </a>,
-                <a
                   href="https://www.npmjs.com/package/country-state-city-nextjs"
                   target="_blank"
                 >
@@ -152,6 +146,28 @@ const index = () => {
               ]}
             /> */}
             <TextList
+              title="Fenextjs"
+              list={[
+                <p>
+                  Una librería innovadora diseñada para revolucionar tu experiencia de desarrollo en Next.js. Nuestra misión es simplificar tu trabajo, ahorrándote tiempo valioso y energía en cada proyecto.
+                </p>,
+                <a href="https://fenextjs-doc.vercel.app/" target="_blank">
+                  https://fenextjs-doc.vercel.app/
+                </a>,
+              ]}
+            />
+            <TextList
+              title="Xell"
+              list={[
+                <p>
+                  CRM, Ventas, Bodegas, Productos, POS, Cajas, todo en un solo lugar. Una plataforma sencilla, intuitiva y robusta.
+                </p>,
+                <a href="https://xell.shop/es/" target="_blank">
+                  https://xell.shop
+                </a>,
+              ]}
+            />
+            {/* <TextList
               title="Mooveri"
               list={[
                 <a href="https://mooveri.com/" target="_blank">
@@ -161,54 +177,8 @@ const index = () => {
                   Mooveri NextJs
                 </a>,
               ]}
-            />
-            <TextList
-              title="Smarfit"
-              list={[
-                <a
-                  href="https://gitlab.com/franciscoblancojn/payment-niubiz"
-                  target="_blank"
-                >
-                  Payment Niubiz
-                </a>,
-                <a
-                  href="https://gitlab.com/franciscoblancojn/facturacion-smarfit"
-                  target="_blank"
-                >
-                  Facturacion Smarfit
-                </a>,
-                <a
-                  href="https://gitlab.com/franciscoblancojn/analytics-smarfit"
-                  target="_blank"
-                >
-                  Analytics Smarfit
-                </a>,
-              ]}
-            />
-            <TextList
-              title="Onetradeaday"
-              list={[
-                <a href="https://gitlab.com/onetradeaday" target="_blank">
-                  Onetradeaday Repositorio
-                </a>,
-                <a href="https://onetradeaday.vercel.app/" target="_blank">
-                  Onetradeaday Web
-                </a>,
-                <a
-                  href="https://onetradeadaybackoffice.vercel.app/"
-                  target="_blank"
-                >
-                  Onetradeaday Backoffice
-                </a>,
-                <a href="https://gitlab.com/onetradeaday/api" target="_blank">
-                  Onetradeaday Api Repositorio
-                </a>,
-                <a href="https://onetradeaday.onrender.com/" target="_blank">
-                  Onetradeaday Api
-                </a>,
-              ]}
-            />
-            <TextList
+            /> */}
+            {/* <TextList
               title="Takeprofit"
               list={[
                 <a
@@ -242,14 +212,14 @@ const index = () => {
                   Takeprofit Api
                 </a>,
               ]}
-            />
+            /> */}
             {/* <TextList
               title="Marketinghacking"
               list={[
                 <a href="https://marketinghacking.academy/" target="_blank">Marketinghacking Web</a>,
               ]}
             /> */}
-            <TextList
+            {/* <TextList
               title="Aveonline"
               list={[
                 <a
@@ -265,7 +235,7 @@ const index = () => {
                   Aveonline Drop Shipping
                 </a>,
               ]}
-            />
+            /> */}
             {/* <TextList
               title="Elios"
               list={[
@@ -277,7 +247,7 @@ const index = () => {
             <Title>Experiencia Laboral</Title>
             <TextList
               title="Desarrollador Web, Byte4bit"
-              date="2020 - actualidad"
+              date="03/2020 - 12/2024"
               list={[
                 "Desarrollo de Paginas Web en NextJs",
                 "Desarrollo de Api con NodeJs",
@@ -289,24 +259,24 @@ const index = () => {
                 "Desarrollo de App Movil con Flutter",
               ]}
             />
-            <TextList
+            {/* <TextList
               title="Desarrollador Web, Bizmerk"
               date="2020 - 2020"
               list={[
                 "Desarrollo de Paginas Web en Wordpress",
                 "Desarrollo de Plugins para Wordpress",
               ]}
-            />
+            /> */}
             <TextList
               title="Desarrollador Web, Opperweb"
-              date="2018 - 2020"
+              date="09/2018 - 02/2020"
               list={[
                 "Desarrollo de Paginas Web en Wordpress",
                 "Desarrollo de Plugins para Wordpress",
               ]}
             />
             <Title>Formacion Academica</Title>
-            <TextList
+            {/* <TextList
               title="Cursos Online"
               list={[
                 "NodeJs and Express",
@@ -327,13 +297,13 @@ const index = () => {
             <TextList
               title="Cursos en Edteam"
               list={["HTML desde 0", "CSS desde 0", "JS desde 0", "SASS"]}
-            />
+            /> */}
             <TextList
               title="Educacion Universitaria en UNET"
               list={[
                 "Ingenieria Informatica",
-                "Conferencia de Angular",
-                "Conferencia de Desarrollo Android",
+                // "Conferencia de Angular",
+                // "Conferencia de Desarrollo Android",
                 "Preparador en Estructura de Datos",
                 "Preparador en Fundamentos de Logica Digital",
               ]}
@@ -348,9 +318,8 @@ const index = () => {
             <p>
               Soy <strong>Desarrollador Web</strong> con más de 5 años de
               experiencia. Comencé mis estudios en Ingeniería de Sistemas en la
-              Universidad Nacional Experimental del Táchira (UNET), pero decidí
-              enfocarme en una oportunidad laboral que me introdujo al
-              desarrollo web. Desde entonces, esta área se ha convertido en mi
+              Universidad Nacional Experimental del Táchira (UNET).
+              Desde entonces, esta área se ha convertido en mi
               verdadera pasión.
             </p>
             <p>
@@ -391,25 +360,25 @@ const index = () => {
                 text="+57 310 355 7200"
               />
               <RS
-                className="gitlab"
-                href="https://gitlab.com/franciscoblancojn"
-                icon="fab fa-gitlab"
-                text="franciscoblancojn"
-              />
-              <RS
                 className="github"
                 href="https://github.com/franciscoblancojn"
                 icon="fab fa-github"
                 text="franciscoblancojn"
               />
               <RS
-                className="npm"
-                href="https://www.instagram.com/franciscoblanco_ters/"
-                icon="fab fa-instagram"
-                text="franciscoblanco_ters"
+                className="gitlab"
+                href="https://gitlab.com/franciscoblancojn"
+                icon="fab fa-gitlab"
+                text="franciscoblancojn"
               />
               <RS
                 className="instagram"
+                href="https://www.instagram.com/franciscoblancojn/"
+                icon="fab fa-instagram"
+                text="franciscoblancojn"
+              />
+              <RS
+                className="npm"
                 href="https://www.npmjs.com/~franciscoblancojn/"
                 icon="fab fa-npm"
                 text="franciscoblancojn"
@@ -423,14 +392,14 @@ const index = () => {
             </div>
             <H h="30px" />
             <Title>Competencia Tic</Title>
-            <PorcentajeLinear p={85}>Linux</PorcentajeLinear>
+            <PorcentajeLinear p={85}>Nextjs</PorcentajeLinear>
+            <PorcentajeLinear p={85}>React</PorcentajeLinear>
             <PorcentajeLinear p={100}>Git</PorcentajeLinear>
             <PorcentajeLinear p={95}>JS</PorcentajeLinear>
             <PorcentajeLinear p={90}>Sass</PorcentajeLinear>
             <PorcentajeLinear p={85}>PHP</PorcentajeLinear>
+            <PorcentajeLinear p={85}>Linux</PorcentajeLinear>
             {/* <PorcentajeLinear p={80}>MongoDB</PorcentajeLinear> */}
-            <PorcentajeLinear p={85}>React</PorcentajeLinear>
-            <PorcentajeLinear p={85}>Nextjs</PorcentajeLinear>
             <H h="30px" />
             <Title>Idiomas</Title>
             <PorcentajeLinear p={100}>Español</PorcentajeLinear>
