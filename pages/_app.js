@@ -20,13 +20,13 @@ function MyApp({ Component, pageProps }) {
           integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
           crossorigin="anonymous"
         />
+        <meta property="og:title" content="Francisco Blanco" />
+        <meta
+          property="og:description"
+          content="Soy Desarrollador Web con más de 5 años de experiencia. Especializado en Nextjs, Javascript y CSS, tambien soy el creador de Fenextjs"
+        />
+        <meta property="og:image" content="/favicon.png" />
       </Head>
-      <meta property="og:title" content="Francisco Blanco" />
-      <meta
-        property="og:description"
-        content="Soy Desarrollador Web con más de 5 años de experiencia. Especializado en Nextjs, Javascript y CSS, tambien soy el creador de Fenextjs"
-      />
-      <meta property="og:image" content="/favicon.png" />
       <Component {...pageProps} />
     </>
   );
