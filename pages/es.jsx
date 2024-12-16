@@ -18,7 +18,7 @@ const index = () => {
         <Container>
           <Row className="alignCenter">
             <Col col={6} className="col-sm-7 no-breack-print">
-              <h1>Francisco Blano</h1>
+              <h1>Francisco Blanco</h1>
               <h2>Desarrollador FullStack</h2>
               <div>
                 <Row>
@@ -55,9 +55,9 @@ const index = () => {
       </Banner>
       <Container className="content">
         <Row>
-          <Col col={8} className="col-xl-6 col-lg-12">
+          <Col col={8} className="col-xl-12 col-lg-12">
             <Row>
-              <Col col={8} className=" no-breack-print">
+              <Col col={8} className="col-lg-6 col-md-12 no-breack-print">
                 <Title>Perfil Profesional</Title>
                 <p>
                   Soy <strong>Desarrollador Web</strong> con más de{" "}
@@ -93,9 +93,9 @@ const index = () => {
                   Nextjs.
                 </p>
               </Col>
-              <Col col={4} className=" no-breack-print">
+              <Col col={4} className="col-lg-6 col-md-12 no-breack-print">
                 <div>
-                  <H h="80px" className="" />
+                  <H h="80px" className="md-none" />
                   <RS
                     className="email"
                     href="mailto:blancofrancisco34@gmail.com"
@@ -296,7 +296,7 @@ const index = () => {
               ]}
             />
           </Col>
-          <Col col={4} className="aside col-xl-6 col-lg-12 print-force-break">
+          <Col col={4} className="aside col-xl-12 col-lg-12 print-force-break">
             <div className="print-2-col">
               <div>
                 <Title>Competencia Tic</Title>
