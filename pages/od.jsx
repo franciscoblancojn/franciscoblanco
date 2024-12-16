@@ -83,10 +83,67 @@ const index = () => {
                 <PorcentajeCircular p={85}>NextJs</PorcentajeCircular>
                 <PorcentajeCircular p={85}>React</PorcentajeCircular>
                 <PorcentajeCircular p={96}>Wordpress</PorcentajeCircular>
+                {/* <PorcentajeCircular p={86}>MongoDB <br/> MySQL</PorcentajeCircular> */}
               </Row>
             </Container>
             <H h="40px" />
             <Title>Desarrollos</Title>
+            {/* <TextList
+              title="Npm Packages"
+              list={[
+                <a
+                  href="https://www.npmjs.com/package/fenextjs"
+                  target="_blank"
+                >
+                  fenextjs
+                </a>,
+                <a
+                  href="https://www.npmjs.com/package/fenextjs-component"
+                  target="_blank"
+                >
+                  fenextjs-component
+                </a>,
+                <a
+                  href="https://www.npmjs.com/package/fenextjs-hook"
+                  target="_blank"
+                >
+                  fenextjs-hook
+                </a>,
+                <a
+                  href="https://www.npmjs.com/package/fenextjs-functions"
+                  target="_blank"
+                >
+                  fenextjs-functions
+                </a>,
+                <a
+                  href="https://www.npmjs.com/package/fenextjs-validator"
+                  target="_blank"
+                >
+                  fenextjs-validator
+                </a>,
+                <a
+                  href="https://www.npmjs.com/package/fenextjs-firebase"
+                  target="_blank"
+                >
+                  fenextjs-firebase
+                </a>,
+                <a href="https://fenextjs-doc.vercel.app/" target="_blank">
+                  fenextjs-doc
+                </a>,
+                <a
+                  href="https://www.npmjs.com/package/country-state-city-nextjs"
+                  target="_blank"
+                >
+                  country-state-city-nextjs
+                </a>,
+              ]}
+            /> */}
+            {/* <TextList
+              title="Comunidad"
+              list={[
+                <a href="https://gitlab.com/franciscoblancojn/templatenextjs" target="_blank">Templatenextjs</a>,
+              ]}
+            /> */}
             <TextList
               title="Fenextjs"
               list={[
@@ -239,6 +296,84 @@ const index = () => {
                 </>,
               ]}
             />
+
+            {/* <TextList
+              title="Mooveri"
+              list={[
+                <a href="https://mooveri.com/" target="_blank">
+                  Mooveri Wordpress
+                </a>,
+                <a href="https://app.mooveri.com/login" target="_blank">
+                  Mooveri NextJs
+                </a>,
+              ]}
+            /> */}
+            {/* <TextList
+              title="Takeprofit"
+              list={[
+                <a
+                  href="https://gitlab.com/franciscoblancojn/takeprofit"
+                  target="_blank"
+                >
+                  Takeprofit Repositorio
+                </a>,
+                <a href="https://takeprofit.vercel.app/" target="_blank">
+                  Takeprofit Web
+                </a>,
+                <a
+                  href="https://gitlab.com/franciscoblancojn/takeprofit-backoffice"
+                  target="_blank"
+                >
+                  Takeprofit Backoffice Repositorio
+                </a>,
+                <a
+                  href="https://takeprofi-backoffice.vercel.app/"
+                  target="_blank"
+                >
+                  Takeprofit Backoffice Web
+                </a>,
+                <a
+                  href="https://gitlab.com/franciscoblancojn/takeprofit-api"
+                  target="_blank"
+                >
+                  Takeprofit Api Repositorio
+                </a>,
+                <a href="https://takeprofi-api.herokuapp.com/" target="_blank">
+                  Takeprofit Api
+                </a>,
+              ]}
+            /> */}
+            {/* <TextList
+              title="Marketinghacking"
+              list={[
+                <a href="https://marketinghacking.academy/" target="_blank">Marketinghacking Web</a>,
+              ]}
+            /> */}
+            {/* <TextList
+              title="Aveonline"
+              list={[
+                <a
+                  href="https://gitlab.com/franciscoblancojn/aveonline"
+                  target="_blank"
+                >
+                  Aveonline Plugin Wordpress
+                </a>,
+                <a
+                  href="https://gitlab.com/franciscoblancojn/dropshippingaveonline"
+                  target="_blank"
+                >
+                  Aveonline Drop Shipping
+                </a>,
+              ]}
+            /> */}
+            {/* <TextList
+              title="Elios"
+              list={[
+                <a href="https://gitlab.com/eliosapp/page-next" target="_blank">Elios Repositorio</a>,
+                <a href="https://app.eliosanalytics.com/" target="_blank">Elios Web</a>,
+                <a href="https://gitlab.com/eliosapp/plugin-wordpress" target="_blank">Elios Plugin Wordpress</a>,
+              ]}
+            /> */}
             <Title>Experiencia Laboral</Title>
             <TextList
               title="Desarrollador Web, Byte4bit"
@@ -246,10 +381,22 @@ const index = () => {
               list={[
                 "Desarrollo de Paginas Web en Nextjs",
                 "Desarrollo de Api con Nodejs",
+                // "Manejo de Base de Datos MySQL",
+                // "Manejo de Base de Datos MongoDB",
+                "Desarrollo de Paginas Web en Wordpress",
+                "Desarrollo de Plugins para Wordpress",
+                // "Desarrollo del App Elios",
+                // "Desarrollo de App Movil con Flutter",
+              ]}
+            />
+            {/* <TextList
+              title="Desarrollador Web, Bizmerk"
+              date="2020 - 2020"
+              list={[
                 "Desarrollo de Paginas Web en Wordpress",
                 "Desarrollo de Plugins para Wordpress",
               ]}
-            />
+            /> */}
             <TextList
               title="Desarrollador Web, Opperweb"
               date="09/2018 - 02/2020"
@@ -258,6 +405,39 @@ const index = () => {
                 "Desarrollo de Plugins para Wordpress",
               ]}
             />
+            {/* <Title>Formacion Academica</Title> */}
+            {/* <TextList
+              title="Cursos Online"
+              list={[
+                "NodeJs and Express",
+                "ReactJs and NextJs",
+                "MySql",
+                "MongoDB",
+                "Wordpress",
+                "PHP",
+                "Python",
+                "React Native",
+                "Firebase in React",
+                "React Native and Expo",
+                "Servidores Linux",
+                "C#",
+                "Prisma ORM",
+              ]}
+            />
+            <TextList
+              title="Cursos en Edteam"
+              list={["HTML desde 0", "CSS desde 0", "JS desde 0", "SASS"]}
+            /> */}
+            {/* <TextList
+              title="Educacion Universitaria en UNET"
+              list={[
+                "Ingenieria Informatica",
+                // "Conferencia de Angular",
+                // "Conferencia de Desarrollo Android",
+                "Preparador en Estructura de Datos",
+                "Preparador en Fundamentos de Logica Digital",
+              ]}
+            /> */}
           </Col>
           <Col
             col={4}
@@ -348,6 +528,20 @@ const index = () => {
             <PorcentajeLinear p={95}>JS</PorcentajeLinear>
             <PorcentajeLinear p={90}>Sass</PorcentajeLinear>
             <PorcentajeLinear p={85}>PHP</PorcentajeLinear>
+            {/* <PorcentajeLinear p={85}>Linux</PorcentajeLinear> */}
+            {/* <PorcentajeLinear p={80}>MongoDB</PorcentajeLinear> */}
+            {/* <H h="30px" />
+            <Title>Idiomas</Title>
+            <PorcentajeLinear p={100}>Español</PorcentajeLinear>
+            <PorcentajeLinear p={20}>Ingles</PorcentajeLinear>
+            <H h="30px" />
+            <Title>Referencias</Title>
+            <Referencia email="agudelocjuan@gmail.com">
+              Juan Agudelo (Byte4bit)
+            </Referencia>
+            <Referencia email="santiago@bizmerk.com">
+              Santiago Gomez (Bizmerk)
+            </Referencia> */}
           </Col>
         </Row>
       </Container>

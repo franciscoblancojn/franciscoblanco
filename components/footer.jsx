@@ -8,10 +8,10 @@ const Footer = () => {
         <footer>
             <Container>
                 <Row>
-                    <Col col={4} className="col-lg-3 col-md-12">
+                    <Col col={4} className="col-lg-3 col-md-12 no-breack-print">
                         Francisco Blanco
                     </Col>
-                    <Col col={4} className="col-lg-5 col-md-12">
+                    <Col col={4} className="col-lg-5 col-md-12 no-breack-print">
                         <RS
                         className="email"
                         href="mailto:blancofrancisco34@gmail.com"
@@ -19,7 +19,7 @@ const Footer = () => {
                         text="blancofrancisco34@gmail.com"
                         />
                     </Col>
-                    <Col col={4} className="col-lg-4 col-md-12">
+                    <Col col={4} className="col-lg-4 col-md-12 no-breack-print">
                         <RS
                         className="whatsapp"
                         href="https://api.whatsapp.com/send?phone=573103557200"

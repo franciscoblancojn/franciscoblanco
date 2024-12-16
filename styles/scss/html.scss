@@ -1,3 +1,28 @@
 html{
     overflow: auto;
 }
+
+.no-print{
+    @media print {
+        display: none;
+    }
+}
+.print-2-col{
+    @media print {
+        display: grid;
+        align-items: flex-start;
+        gap: 1rem;
+        grid-template-columns: 50% 50%;
+    }
+}
+@media print {
+    .print-force-break {
+        page-break-before: always; /* Fuerza el inicio de una nueva página antes del elemento */
+        padding-top: 40px;
+    }
+}
+body{
+    @media print {
+        padding-bottom: 45px;
+    }
+}

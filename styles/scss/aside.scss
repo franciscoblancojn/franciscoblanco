@@ -2,4 +2,7 @@
     @media (min-width:992px) {
         border-left: 2px solid var(--color-4);
     }
+    @media print {
+        border-left:0px;
+    }
 }

@@ -44,4 +44,9 @@
             
         }
     }
+    &:not(.no-breack-print){
+        @media print {
+            width: 100%;
+        }
+    }
 }
