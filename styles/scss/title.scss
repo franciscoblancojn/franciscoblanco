@@ -4,4 +4,13 @@
     padding-top: 20px;
     padding-bottom: 15px;
     text-transform: uppercase;
+    @media (max-width:766px) {
+        font-size: 1.2rem;
+        padding-bottom: 5px;
+    }
+    i{
+        @media (max-width:766px) {
+            margin-right: 5px !important;
+        }
+    }
 }

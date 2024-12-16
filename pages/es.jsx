@@ -1,4 +1,3 @@
-import Head from "next/head";
 
 import Banner from "@/components/banner";
 import Container from "@/components/container";

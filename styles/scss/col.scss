@@ -12,7 +12,7 @@
         }
         
     }
-    @media (max-width:1199px) {
+    @media (max-width:1240px) {
         @for $var from 1 to 13 {
             &-xl-#{$var}{
                 width: #{$a_100_12 * $var * 1%};
@@ -48,5 +48,11 @@
         @media print {
             width: 100%;
         }
+    }
+}
+
+.md-none{
+    @media (max-width:766px) {
+        display: none;
     }
 }
