@@ -33,12 +33,12 @@ const index = () => {
       <Banner>
         <Container>
           <Row className="alignCenter">
-            <Col col={6} className="col-sm-7">
+            <Col col={6} className="col-sm-7 no-breack-print">
               <h1>Francisco Blano</h1>
               <h2>Desarrollador FullStack</h2>
               <div>
                 <Row>
-                  <Col col={6} className="col-xl-12">
+                  <Col col={6} className="col-xl-12 no-breack-print">
                     <RS
                       className="email"
                       href="mailto:blancofrancisco34@gmail.com"
@@ -46,7 +46,7 @@ const index = () => {
                       text="blancofrancisco34@gmail.com"
                     />
                   </Col>
-                  <Col col={6} className="col-xl-12">
+                  <Col col={6} className="col-xl-12 no-breack-print">
                     <RS
                       className="whatsapp"
                       href="https://api.whatsapp.com/send?phone=573103557200"
@@ -57,7 +57,7 @@ const index = () => {
                 </Row>
               </div>
             </Col>
-            <Col col={6} className="col-sm-5">
+            <Col col={6} className="col-sm-5 no-breack-print">
               <div style={{ textAlign: "center" }}>
                 <img
                   src="/img/I_am.jpg"
@@ -71,22 +71,94 @@ const index = () => {
       </Banner>
       <Container className="content">
         <Row>
-          <Col
-            col={8}
-            className="col-xl-6 col-lg-12"
-            style={{ paddingTop: "50px" }}
-          >
-            <Title>Especialidades</Title>
-            <Container>
-              <Row>
-                <PorcentajeCircular p={90}>NodeJs</PorcentajeCircular>
-                <PorcentajeCircular p={85}>NextJs</PorcentajeCircular>
-                <PorcentajeCircular p={85}>React</PorcentajeCircular>
-                <PorcentajeCircular p={96}>Wordpress</PorcentajeCircular>
-              </Row>
-            </Container>
-            <H h="40px" />
-            <Title>Desarrollos</Title>
+          <Col col={8} className="col-xl-6 col-lg-12">
+            <Row>
+              <Col col={8} className=" no-breack-print">
+                <Title>Perfil Profesional</Title>
+                <p>
+                  Soy <strong>Desarrollador Web</strong> con más de{" "}
+                  <strong>5 años</strong> de experiencia. Comencé mis estudios
+                  en Ingeniería de Sistemas en la Universidad Nacional
+                  Experimental del Táchira (UNET). Desde entonces, esta área se
+                  ha convertido en mi verdadera pasión.
+                </p>
+                <p>
+                  Inicié mi carrera trabajando con <strong>WordPress</strong>, y
+                  con el tiempo me especialicé en <strong>JavaScript</strong>,
+                  que hoy es mi lenguaje favorito. Me entusiasma su
+                  versatilidad, ya que permite trabajar tanto en el Frontend
+                  como en el Backend, facilitando la creación de aplicaciones
+                  completas.
+                </p>
+                <p>
+                  Estoy siempre en busca de aprender y adoptar nuevas
+                  tecnologías. He explorado el <strong>Desarrollo Móvil</strong>{" "}
+                  y la creación de <strong>Aplicaciones de Escritorio</strong>,
+                  aunque el <strong>Desarrollo Web</strong> sigue siendo mi
+                  preferido.
+                </p>
+                <p>
+                  Además, disfruto contribuir a la comunidad creando librerías
+                  en npm. Mi proyecto más destacado es{" "}
+                  <strong>
+                    <a href="https://www.npmjs.com/package/fenextjs">
+                      Fenextjs
+                    </a>
+                  </strong>
+                  , una librería para facilitar el desarrollo de sitios web con
+                  Nextjs.
+                </p>
+              </Col>
+              <Col col={4} className=" no-breack-print">
+                <div>
+                  <H h="80px" className="" />
+                  <RS
+                    className="email"
+                    href="mailto:blancofrancisco34@gmail.com"
+                    icon="far fa-envelope"
+                    text="blancofrancisco34@gmail.com"
+                  />
+                  <RS
+                    className="whatsapp"
+                    href="https://api.whatsapp.com/send?phone=573103557200"
+                    icon="fab fa-whatsapp"
+                    text="+57 310 355 7200"
+                  />
+                  <RS
+                    className="github"
+                    href="https://github.com/franciscoblancojn"
+                    icon="fab fa-github"
+                    text="franciscoblancojn"
+                  />
+                  <RS
+                    className="gitlab"
+                    href="https://gitlab.com/franciscoblancojn"
+                    icon="fab fa-gitlab"
+                    text="franciscoblancojn"
+                  />
+                  <RS
+                    className="instagram"
+                    href="https://www.instagram.com/franciscoblancojn/"
+                    icon="fab fa-instagram"
+                    text="franciscoblancojn"
+                  />
+                  <RS
+                    className="npm"
+                    href="https://www.npmjs.com/~franciscoblancojn/"
+                    icon="fab fa-npm"
+                    text="franciscoblancojn"
+                  />
+                  <RS
+                    className="linkedin"
+                    href="https://www.linkedin.com/in/francisco-blanco-ab1b91186/"
+                    icon="fab fa-linkedin-in"
+                    text="Francisco Blanco"
+                  />
+                </div>
+              </Col>
+            </Row>
+            {/* <H h="40px" /> */}
+            <Title>Proyectos mas importantes</Title>
             <TextList
               title="Fenextjs"
               list={[
@@ -239,11 +311,37 @@ const index = () => {
                 </>,
               ]}
             />
+          </Col>
+          <Col col={4} className="aside col-xl-6 col-lg-12 print-force-break">
+            <div className="print-2-col">
+              <div>
+                <Title>Competencia Tic</Title>
+                <PorcentajeLinear p={85}>Nextjs</PorcentajeLinear>
+                <PorcentajeLinear p={85}>React</PorcentajeLinear>
+                <PorcentajeLinear p={100}>Git</PorcentajeLinear>
+                <PorcentajeLinear p={95}>JS</PorcentajeLinear>
+                <PorcentajeLinear p={90}>Sass</PorcentajeLinear>
+                <PorcentajeLinear p={85}>PHP</PorcentajeLinear>
+              </div>
+              <H h="30px" className="no-print" />
+              <div>
+                <Title>Especialidades</Title>
+                <Container>
+                  <Row>
+                    <PorcentajeCircular p={90}>NodeJs</PorcentajeCircular>
+                    <PorcentajeCircular p={85}>NextJs</PorcentajeCircular>
+                    <PorcentajeCircular p={85}>React</PorcentajeCircular>
+                    <PorcentajeCircular p={96}>Wordpress</PorcentajeCircular>
+                  </Row>
+                </Container>
+              </div>
+            </div>
             <Title>Experiencia Laboral</Title>
             <TextList
               title="Desarrollador Web, Byte4bit"
               date="03/2020 - 12/2024"
               list={[
+                "Desarrollo de Xell",
                 "Desarrollo de Paginas Web en Nextjs",
                 "Desarrollo de Api con Nodejs",
                 "Desarrollo de Paginas Web en Wordpress",
@@ -258,96 +356,6 @@ const index = () => {
                 "Desarrollo de Plugins para Wordpress",
               ]}
             />
-          </Col>
-          <Col
-            col={4}
-            className="aside col-xl-6 col-lg-12"
-            style={{ paddingTop: "50px", paddingBottom: "50px" }}
-          >
-            <Title>Perfil Profesional</Title>
-            <p>
-              Soy <strong>Desarrollador Web</strong> con más de{" "}
-              <strong>5 años</strong> de experiencia. Comencé mis estudios en
-              Ingeniería de Sistemas en la Universidad Nacional Experimental del
-              Táchira (UNET). Desde entonces, esta área se ha convertido en mi
-              verdadera pasión.
-            </p>
-            <p>
-              Inicié mi carrera trabajando con <strong>WordPress</strong>, y con
-              el tiempo me especialicé en <strong>JavaScript</strong>, que hoy
-              es mi lenguaje favorito. Me entusiasma su versatilidad, ya que
-              permite trabajar tanto en el Frontend como en el Backend,
-              facilitando la creación de aplicaciones completas.
-            </p>
-            <p>
-              Estoy siempre en busca de aprender y adoptar nuevas tecnologías.
-              He explorado el <strong>Desarrollo Móvil</strong> y la creación de{" "}
-              <strong>Aplicaciones de Escritorio</strong>, aunque el{" "}
-              <strong>Desarrollo Web</strong> sigue siendo mi preferido.
-            </p>
-            <p>
-              Además, disfruto contribuir a la comunidad creando librerías en
-              npm. Mi proyecto más destacado es{" "}
-              <strong>
-                <a href="https://www.npmjs.com/package/fenextjs">Fenextjs</a>
-              </strong>
-              , una librería para facilitar el desarrollo de sitios web con
-              Nextjs.
-            </p>
-
-            <H h="30px" />
-            <div>
-              <RS
-                className="email"
-                href="mailto:blancofrancisco34@gmail.com"
-                icon="far fa-envelope"
-                text="blancofrancisco34@gmail.com"
-              />
-              <RS
-                className="whatsapp"
-                href="https://api.whatsapp.com/send?phone=573103557200"
-                icon="fab fa-whatsapp"
-                text="+57 310 355 7200"
-              />
-              <RS
-                className="github"
-                href="https://github.com/franciscoblancojn"
-                icon="fab fa-github"
-                text="franciscoblancojn"
-              />
-              <RS
-                className="gitlab"
-                href="https://gitlab.com/franciscoblancojn"
-                icon="fab fa-gitlab"
-                text="franciscoblancojn"
-              />
-              <RS
-                className="instagram"
-                href="https://www.instagram.com/franciscoblancojn/"
-                icon="fab fa-instagram"
-                text="franciscoblancojn"
-              />
-              <RS
-                className="npm"
-                href="https://www.npmjs.com/~franciscoblancojn/"
-                icon="fab fa-npm"
-                text="franciscoblancojn"
-              />
-              <RS
-                className="linkedin"
-                href="https://www.linkedin.com/in/francisco-blanco-ab1b91186/"
-                icon="fab fa-linkedin-in"
-                text="Francisco Blanco"
-              />
-            </div>
-            <H h="30px" />
-            <Title>Competencia Tic</Title>
-            <PorcentajeLinear p={85}>Nextjs</PorcentajeLinear>
-            <PorcentajeLinear p={85}>React</PorcentajeLinear>
-            <PorcentajeLinear p={100}>Git</PorcentajeLinear>
-            <PorcentajeLinear p={95}>JS</PorcentajeLinear>
-            <PorcentajeLinear p={90}>Sass</PorcentajeLinear>
-            <PorcentajeLinear p={85}>PHP</PorcentajeLinear>
           </Col>
         </Row>
       </Container>
