@@ -7,6 +7,12 @@ function MyApp({ Component, pageProps }) {
     <>
       <Head>
         <title>Francisco Blanco</title>
+        <meta property="og:title" content="Francisco Blanco" />
+        <meta
+          property="og:description"
+          content="Soy Desarrollador Web con más de 5 años de experiencia. Especializado en Nextjs, Javascript y CSS, tambien soy el creador de Fenextjs"
+        />
+        <meta property="og:image" content="/favicon.png" />
         <link rel="icon" href="/favicon.png" sizes="32x32"></link>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -20,12 +26,6 @@ function MyApp({ Component, pageProps }) {
           integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
           crossorigin="anonymous"
         />
-        <meta property="og:title" content="Francisco Blanco" />
-        <meta
-          property="og:description"
-          content="Soy Desarrollador Web con más de 5 años de experiencia. Especializado en Nextjs, Javascript y CSS, tambien soy el creador de Fenextjs"
-        />
-        <meta property="og:image" content="/favicon.png" />
       </Head>
       <Component {...pageProps} />
     </>
