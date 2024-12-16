@@ -15,21 +15,6 @@ import Footer from "@/components/footer";
 const index = () => {
   return (
     <>
-      <Head>
-        <title>Francisco Blanco</title>
-        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap"
-          rel="stylesheet"
-        />
-        <link
-          rel="stylesheet"
-          href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
-          integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
-          crossorigin="anonymous"
-        />
-      </Head>
       <Banner>
         <Container>
           <Row className="alignCenter">
