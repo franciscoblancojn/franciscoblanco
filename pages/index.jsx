@@ -295,8 +295,46 @@ const index = () => {
                 </>,
               ]}
             />
+            <div className="print-force-break"></div>
+            <TextList
+              title="Aveonline"
+              list={[
+                <i>
+                  Una plugin para wordpress para gestionar envios.
+                </i>,
+                 <>
+                 Aveonline es plugin para wordpress que desarrollé durante 1 años, diseñado
+                 para gestionar envios desde Wordpress usando la plataforma de Aveonline de manera eficiente y clara.
+               </>,
+                <>
+                  Algunas de las funcionalidades de
+                  <b>Aveonline</b> incluyen:
+                  <ul>
+                    <li>
+                      Configurar la cuenta de aveonline en Wordpress.
+                    </li>
+                    <li>
+                     Configurar informacion de Productos para envios.
+                    </li>
+                    <li>
+                      Muestra lista de Transportadoras a usar.
+                    </li>
+                    <li>
+                      Permite gestionar si el envios es contraentrega
+                    </li>
+                  </ul>
+                </>,
+                <>
+                  La plugin de <b>Aveonline</b> está disponible
+                  en:{" "}
+                  <a href="https://gitlab.com/franciscoblancojn/aveonline" target="_blank">
+                  https://gitlab.com/franciscoblancojn/aveonline
+                  </a>
+                </>,
+              ]}
+            />
           </Col>
-          <Col col={4} className="aside col-xl-12 col-lg-12 print-force-break">
+          <Col col={4} className="aside col-xl-12 col-lg-12 ">
             <div className="print-2-col">
               <div>
                 <Title>Competencia Tic</Title>
