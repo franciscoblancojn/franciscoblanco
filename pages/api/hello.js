@@ -8,6 +8,7 @@ export default (req, res) => {
     cacheData.put(KEY_CACHE, req.body,1000000);
     res.statusCode = 200
     res.json({ save:"ok", body:req.body })
+    return;
   } 
   const cache = cacheData.get(KEY_CACHE);
   res.statusCode = 200
