@@ -6,20 +6,17 @@
     <title>Document</title>
 </head>
 <body>
-    <!-- <script src="https://chat.aveonline.co/store/template?id=215760&key=uJnu5VFRtXBs3tDwvzcQK2O"></script> -->
-
-    <!-- <script src="https://chatrace.com/webchat/plugin.js?v=6"></script>
-    <script>ktt10.setup({id:"wPdjPiCp4FzMx5A3dpeIYYTAebpbar",accountId:"329796",color:"#006dff"})</script> -->
-
-
-    <!-- <script src="https://cdn.chatrace.com/widget.js" async></script>
-    <script>
-    window.ChatraceSettings = {
-        apiKey: "TU_API_KEY",
-        widgetId: "TU_WIDGET_ID",
-        whatsapp: true
-    };
-    </script> -->
     <script src="https://chat.aveonline.co/webchat/plugin.js?v=6"></script><script>ktt10.setup({id:"1ZH4pK4mCZs8kf",accountId:"1962736",color:"#006dff"})</script>
+
+    <script>
+        (function() {
+            const originalSend = WebSocket.prototype.send;
+            WebSocket.prototype.send = function(data) {
+                console.log('Mensaje enviado por WebSocket:', data);
+                return originalSend.apply(this, arguments);
+            };
+        })();
+
+    </script>
 </body>
 </html>
