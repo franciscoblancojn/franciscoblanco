@@ -6,7 +6,7 @@ const KEY_CACHE = "KEY_CACHE"
 export default (req, res) => {
   
   if (req.method === 'POST') {
-    cacheData.put(req?.query?.id ?? KEY_CACHE, req.body,1000000000000);
+    cacheData.put(req?.query?.id ?? KEY_CACHE, req.body,10000000);
     res.statusCode = 200
     res.json({ save:"ok", body:req.body })
     return;
