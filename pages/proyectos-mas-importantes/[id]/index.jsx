@@ -1,0 +1,52 @@
+import Container from "@/components/container";
+import Col from "@/components/col";
+import Row from "@/components/row";
+import TextList from "@/components/textList";
+import Footer from "@/components/footer";
+import Back from "@/components/back";
+import { DataProyects } from "data/proyects";
+
+const index = ({ id }) => {
+  const proyect = DataProyects.find(
+    (p) => p.title.toLowerCase() === `${id}`.toLowerCase()
+  );
+  return (
+    <>
+      <Container className="content">
+        <Row>
+          <Col col={12} className="col-xl-12 col-lg-12">
+            <Back />
+            {proyect && (
+              <TextList title={proyect.title} list={proyect.description} />
+            )}
+            <div className="print-force-break"></div>
+          </Col>
+        </Row>
+      </Container>
+      <Footer />
+    </>
+  );
+};
+export const getStaticPaths = async (context) => {
+  return {
+    paths: [
+      {
+        params: {
+          id: "",
+        },
+      }, // See the "paths" section below
+    ],
+    fallback: true, // false or "blocking" }
+  };
+};
+
+export const getStaticProps = async (context) => {
+  const id = context.params.id;
+  return {
+    props: {
+      id,
+    },
+  };
+};
+
+export default index;
