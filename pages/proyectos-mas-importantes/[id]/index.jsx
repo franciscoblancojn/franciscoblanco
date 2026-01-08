@@ -17,7 +17,12 @@ const index = ({ id }) => {
           <Col col={12} className="col-xl-12 col-lg-12">
             <Back />
             {proyect && (
-              <TextList title={proyect.title} list={proyect.description} />
+              <TextList
+                title={proyect.title}
+                img={proyect.img}
+                imgSmall={false}
+                list={[...proyect.short, ...proyect.description]}
+              />
             )}
             <div className="print-force-break"></div>
           </Col>

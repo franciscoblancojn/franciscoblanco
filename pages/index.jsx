@@ -102,6 +102,7 @@ const index = () => {
                 <TextList
                   key={proyecto.title}
                   title={proyecto.title}
+                  img={proyecto.img}
                   url={`/proyectos-mas-importantes/${proyecto.title.trim().toLowerCase().replace(/\s+/g, "-")}`}
                   list={proyecto.short}
                 />
