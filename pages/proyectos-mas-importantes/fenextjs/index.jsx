@@ -4,6 +4,7 @@ import Row from "@/components/row";
 import Title from "@/components/title";
 import TextList from "@/components/textList";
 import Footer from "@/components/footer";
+import Back from "@/components/back";
 
 const index = () => {
   return (
@@ -11,7 +12,7 @@ const index = () => {
       <Container className="content">
         <Row>
           <Col col={12} className="col-xl-12 col-lg-12">
-            <Title back={true}>Proyectos mas importantes</Title>
+            <Back />
             <TextList
               title="Fenextjs"
               list={[
@@ -33,7 +34,7 @@ const index = () => {
                   <b>Componentes</b>, <b>Hooks</b>, <b>Funciones</b>, y{" "}
                   <b>Interfaces</b>, entre otros recursos esenciales.
                 </>,
-            <div className="print-force-break"></div>,
+                <div className="print-force-break"></div>,
                 <>
                   Algunas de las funcionalidades más destacadas y utilizadas en{" "}
                   <b>Fenextjs</b> incluyen:

@@ -1,7 +1,6 @@
 import Icon from "@/components/icon";
 
-const Title = ({ children, className = "", back = false }) => {
-  const arrow = `fas ${back ? "fa-caret-left" : "fa-caret-right"}`;
+const Title = ({ children, className = "" }) => {
   return (
     <h3
       className={`title ${className}`}
@@ -11,20 +10,8 @@ const Title = ({ children, className = "", back = false }) => {
           .toLowerCase()
           .replace(/\s+/g, "-"),
       }}
-      {...(back
-        ? {
-            style: {
-              cursor: "pointer",
-              viewTransitionName: `${children}`
-                .trim()
-                .toLowerCase()
-                .replace(/\s+/g, "-"),
-            },
-            onClick: () => window.history.back(),
-          }
-        : {})}
     >
-      <Icon marginRight="20px">{arrow}</Icon>
+      <Icon marginRight="20px">fas fa-caret-right</Icon>
       {children}
     </h3>
   );
