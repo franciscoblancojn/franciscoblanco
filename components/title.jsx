@@ -1,12 +1,28 @@
-import Icon from "@/components/icon"
+import Icon from "@/components/icon";
 
-const Title = ({children,className=""}) => {
-    return (
-        <h3 className={`title ${className}`}>
-            <Icon marginRight="20px">fas fa-caret-right</Icon>
-            {children}
-        </h3>
-    )
-}
+const Title = ({ children, className = "", back = false }) => {
+  return (
+    <h3
+      className={`title ${className}`}
+      {...(back
+        ? {
+            style: {
+              cursor: "pointer",
+            },
+            onClick: () => window.history.back(),
+          }
+        : {})}
+      style={{
+        viewTransitionName: `${children}`.trim().toLowerCase().replace(/\s+/g, "-"),
+      }}
+    >
+      <Icon marginRight="20px">
+        fas
+        {back ? "fa-caret-left" : "fa-caret-right"}
+      </Icon>
+      {children}
+    </h3>
+  );
+};
 
-export default Title
+export default Title;

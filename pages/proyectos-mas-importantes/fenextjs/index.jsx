@@ -11,7 +11,7 @@ const index = () => {
       <Container className="content">
         <Row>
           <Col col={12} className="col-xl-12 col-lg-12">
-            <Title>Proyectos mas importantes</Title>
+            <Title back={true}>Proyectos mas importantes</Title>
             <TextList
               title="Fenextjs"
               list={[
