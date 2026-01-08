@@ -4,5 +4,10 @@
         width: 200px;
         border-radius: 100%;
         margin: auto;
+        aspect-ratio: 1/1;
+        &-small{
+            @extend .img-Iam;
+            width: 3rem;
+        }
     }
 }

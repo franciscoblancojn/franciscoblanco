@@ -53,6 +53,32 @@ const index = () => {
           </Row>
         </Container>
       </Banner>
+      <Banner className="banner-scroll">
+        <Container>
+          <Row className="alignCenter">
+            <Col col={4} className="col-sm-9 no-breack-print">
+              <h2>Francisco Blanco</h2>
+            </Col>
+            <Col col={4} className="sm-none no-breack-print">
+              <RS
+                className="email"
+                href="mailto:blancofrancisco34@gmail.com"
+                icon="fas fa-envelope"
+                text="blancofrancisco34@gmail.com"
+              />
+            </Col>
+            <Col col={4} className="col-sm-3 no-breack-print">
+              <div style={{ textAlign: "center",display:"flex",justifyContent:"center" }}>
+                <img
+                  src="/img/I_am.jpg"
+                  alt="Francisco Blanco"
+                  className="img img-Iam-small"
+                />
+              </div>
+            </Col>
+          </Row>
+        </Container>
+      </Banner>
       <Container className="content">
         <Row>
           <Col col={8} className="col-xl-12 col-lg-12">
