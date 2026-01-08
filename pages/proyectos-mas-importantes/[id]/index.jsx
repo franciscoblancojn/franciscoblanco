@@ -28,15 +28,15 @@ const index = ({ id }) => {
   );
 };
 export const getStaticPaths = async (context) => {
+  const paths = DataProyects.map((project) => ({
+    params: {
+      id: project.title.toLowerCase(),
+    },
+  }));
+
   return {
-    paths: [
-      {
-        params: {
-          id: "",
-        },
-      }, // See the "paths" section below
-    ],
-    fallback: true, // false or "blocking" }
+    paths,
+    fallback: false,
   };
 };
 
