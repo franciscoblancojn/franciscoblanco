@@ -1,4 +1,9 @@
 import Head from "next/head";
+import Banner from "@/components/banner";
+import Container from "@/components/container";
+import Col from "@/components/col";
+import Row from "@/components/row";
+import RS from "@/components/rs";
 
 import "../styles/global.css";
 
@@ -27,6 +32,71 @@ function MyApp({ Component, pageProps }) {
           crossorigin="anonymous"
         />
       </Head>
+      <Banner>
+        <Container>
+          <Row className="alignCenter">
+            <Col col={6} className="col-sm-7 no-breack-print">
+              <h1>Francisco Blanco</h1>
+              <h2>Desarrollador FullStack</h2>
+              <div>
+                <Row>
+                  <Col col={6} className="col-xl-12 no-breack-print">
+                    <RS
+                      className="email"
+                      href="mailto:blancofrancisco34@gmail.com"
+                      icon="fas fa-envelope"
+                      text="blancofrancisco34@gmail.com"
+                    />
+                  </Col>
+                  <Col col={6} className="col-xl-12 no-breack-print">
+                    <RS
+                      className="whatsapp"
+                      href="https://api.whatsapp.com/send?phone=573103557200"
+                      icon="fab fa-whatsapp"
+                      text="+57 310 355 7200"
+                    />
+                  </Col>
+                </Row>
+              </div>
+            </Col>
+            <Col col={6} className="col-sm-5 no-breack-print">
+              <div style={{ textAlign: "center" }}>
+                <img
+                  src="/img/I_am.jpg"
+                  alt="Francisco Blanco"
+                  className="img img-Iam"
+                />
+              </div>
+            </Col>
+          </Row>
+        </Container>
+      </Banner>
+      <Banner className="banner-scroll">
+        <Container>
+          <Row className="alignCenter">
+            <Col col={4} className="col-sm-9 no-breack-print">
+              <h2>Francisco Blanco</h2>
+            </Col>
+            <Col col={4} className="sm-none no-breack-print">
+              <RS
+                className="email"
+                href="mailto:blancofrancisco34@gmail.com"
+                icon="fas fa-envelope"
+                text="blancofrancisco34@gmail.com"
+              />
+            </Col>
+            <Col col={4} className="col-sm-3 no-breack-print">
+              <div style={{ textAlign: "center",display:"flex",justifyContent:"center" }}>
+                <img
+                  src="/img/I_am.jpg"
+                  alt="Francisco Blanco"
+                  className="img img-Iam-small"
+                />
+              </div>
+            </Col>
+          </Row>
+        </Container>
+      </Banner>
       <Component {...pageProps} />
     </>
   );

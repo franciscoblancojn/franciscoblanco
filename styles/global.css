@@ -454,6 +454,9 @@ li:has(.print-force-break) {
   }
 }
 
+@view-transition {
+  navigation: auto;
+}
 .container {
   width: 1400px;
   max-width: 100%;

@@ -5,8 +5,10 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "export": "next export",
     "start": "next start",
-    "sass": "sass ./styles/global.scss:./styles/global.css"
+    "sass": "sass ./styles/global.scss:./styles/global.css",
+    "flb": "npm run sass && npm run build && npm run export"
   },
   "dependencies": {
     "aos": "^2.3.4",
