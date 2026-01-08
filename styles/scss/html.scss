@@ -42,3 +42,6 @@ body {
 @view-transition{
   navigation: auto;
 }
+::view-transition-group(*){
+  animation-duration: .5s;
+}

@@ -2,7 +2,12 @@ import Icon from "./icon";
 
 const TextList = ({ title, date, list, url }) => {
   return (
-    <div className="textList">
+    <div
+      className="textList"
+      style={{
+        viewTransitionName: title.trim().toLowerCase().replace(/\s+/g, "-"),
+      }}
+    >
       {url ? (
         <>
           <a href={url}>
