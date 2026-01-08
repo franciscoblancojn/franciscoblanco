@@ -115,12 +115,6 @@ const index = () => {
                     text="franciscoblancojn"
                   />
                   <RS
-                    className="gitlab"
-                    href="https://gitlab.com/franciscoblancojn"
-                    icon="fab fa-gitlab"
-                    text="franciscoblancojn"
-                  />
-                  <RS
                     className="instagram"
                     href="https://www.instagram.com/franciscoblancojn/"
                     icon="fab fa-instagram"
@@ -164,6 +158,7 @@ const index = () => {
                   <b>Componentes</b>, <b>Hooks</b>, <b>Funciones</b>, y{" "}
                   <b>Interfaces</b>, entre otros recursos esenciales.
                 </>,
+            <div className="print-force-break"></div>,
                 <>
                   Algunas de las funcionalidades más destacadas y utilizadas en{" "}
                   <b>Fenextjs</b> incluyen:
@@ -228,6 +223,43 @@ const index = () => {
               ]}
             />
 
+            <TextList
+              title="Aveonline"
+              list={[
+                <i>
+                  Un plugin para wordpress para gestionar envios.
+                </i>,
+                 <>
+                 Aveonline es plugin para wordpress que desarrollé durante 1 años, diseñado
+                 para gestionar envios desde Wordpress usando la plataforma de Aveonline de manera eficiente y clara.
+               </>,
+                <>
+                  Algunas de las funcionalidades de
+                  <b>Aveonline</b> incluyen:
+                  <ul>
+                    <li>
+                      Configurar la cuenta de aveonline en Wordpress.
+                    </li>
+                    <li>
+                     Configurar informacion de Productos para envios.
+                    </li>
+                    <li>
+                      Muestra lista de Transportadoras a usar.
+                    </li>
+                    <li>
+                      Permite gestionar si el envios es contraentrega
+                    </li>
+                  </ul>
+                </>,
+                <>
+                  La plugin de <b>Aveonline</b> está disponible
+                  en:{" "}
+                  <a href="https://github.com/franciscoblancojn/aveonline-shipping" target="_blank">
+                  https://github.com/franciscoblancojn/aveonline-shipping
+                  </a>
+                </>,
+              ]}
+            />
             <TextList
               title="Xell"
               list={[
@@ -296,43 +328,6 @@ const index = () => {
               ]}
             />
             <div className="print-force-break"></div>
-            <TextList
-              title="Aveonline"
-              list={[
-                <i>
-                  Una plugin para wordpress para gestionar envios.
-                </i>,
-                 <>
-                 Aveonline es plugin para wordpress que desarrollé durante 1 años, diseñado
-                 para gestionar envios desde Wordpress usando la plataforma de Aveonline de manera eficiente y clara.
-               </>,
-                <>
-                  Algunas de las funcionalidades de
-                  <b>Aveonline</b> incluyen:
-                  <ul>
-                    <li>
-                      Configurar la cuenta de aveonline en Wordpress.
-                    </li>
-                    <li>
-                     Configurar informacion de Productos para envios.
-                    </li>
-                    <li>
-                      Muestra lista de Transportadoras a usar.
-                    </li>
-                    <li>
-                      Permite gestionar si el envios es contraentrega
-                    </li>
-                  </ul>
-                </>,
-                <>
-                  La plugin de <b>Aveonline</b> está disponible
-                  en:{" "}
-                  <a href="https://gitlab.com/franciscoblancojn/aveonline" target="_blank">
-                  https://gitlab.com/franciscoblancojn/aveonline
-                  </a>
-                </>,
-              ]}
-            />
           </Col>
           <Col col={4} className="aside col-xl-12 col-lg-12 ">
             <div className="print-2-col">
@@ -340,10 +335,11 @@ const index = () => {
                 <Title>Competencia Tic</Title>
                 <PorcentajeLinear p={85}>Nextjs</PorcentajeLinear>
                 <PorcentajeLinear p={85}>React</PorcentajeLinear>
-                <PorcentajeLinear p={100}>Git</PorcentajeLinear>
+                <PorcentajeLinear p={95}>Git</PorcentajeLinear>
                 <PorcentajeLinear p={95}>JS</PorcentajeLinear>
                 <PorcentajeLinear p={90}>Sass</PorcentajeLinear>
                 <PorcentajeLinear p={85}>PHP</PorcentajeLinear>
+                <PorcentajeLinear p={75}>Laravel</PorcentajeLinear>
               </div>
               <H h="30px" className="no-print" />
               <div>
@@ -359,6 +355,16 @@ const index = () => {
               </div>
             </div>
             <Title>Experiencia Laboral</Title>
+            <TextList
+              title="Desarrollador Web, Aveonline"
+              date="03/2025 - Actualidad"
+              list={[
+                "Desarrollo de Paginas Web en Nextjs",
+                "Desarrollo de Api con Nodejs",
+                "Desarrollo de Api con Laravel",
+                "Desarrollo de Plugins para Wordpress",
+              ]}
+            />
             <TextList
               title="Desarrollador Web, Byte4bit"
               date="03/2020 - 12/2024"

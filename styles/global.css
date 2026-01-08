@@ -423,10 +423,25 @@ html {
   }
 }
 
+.print-force-break {
+  display: none;
+}
+
+li:has(.print-force-break) {
+  display: none;
+}
+
 @media print {
+  li:has(.print-force-break) {
+    display: block;
+  }
   .print-force-break {
+    display: block;
     page-break-before: always; /* Fuerza el inicio de una nueva página antes del elemento */
     padding-top: 40px;
+  }
+  .textList {
+    margin-bottom: 25px;
   }
 }
 @media print {
@@ -698,7 +713,7 @@ body {
   justify-content: space-between;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1240px) {
   .aside {
     border-left: 2px solid var(--color-4);
   }

@@ -3,11 +3,11 @@ footer{
     color: var(--color-3);
     padding-top: 10px;
     padding-bottom: 10px;
+    position: sticky;
+    bottom: 0;
     .rs{
         margin-bottom: 0;
     }
-    position: sticky;
-    bottom: 0;
     @media (max-width:767px) {
         padding-top: 15px;
         padding-bottom: 15px;
