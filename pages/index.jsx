@@ -103,6 +103,7 @@ const index = () => {
                   key={proyecto.title}
                   title={proyecto.title}
                   img={proyecto.img}
+                  imgReplaceTitle={proyecto.imgReplaceTitle}
                   url={`/proyectos-mas-importantes/${proyecto.title.trim().toLowerCase().replace(/\s+/g, "-")}`}
                   list={proyecto.short}
                 />

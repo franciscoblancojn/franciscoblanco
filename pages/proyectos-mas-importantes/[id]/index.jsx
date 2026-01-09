@@ -20,7 +20,8 @@ const index = ({ id }) => {
               <TextList
                 title={proyect.title}
                 img={proyect.img}
-                imgSmall={false}
+                single={true}
+                imgReplaceTitle={proyect?.imgReplaceTitle}
                 list={[...proyect.short, ...proyect.description]}
               />
             )}

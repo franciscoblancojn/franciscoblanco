@@ -1,13 +1,21 @@
 import Icon from "./icon";
 
-const TextList = ({ img = null,imgSmall=true, title, date, list, url }) => {
+const TextList = ({ img = null,single=false,imgReplaceTitle=false, title, date, list, url }) => {
   let Title = <strong>{title}</strong>;
   if(img){
     Title = (
       <>
-        <img src={img} alt={title} className={`img-textList ${imgSmall ? "img-textList-small" : ""}`}/>
+        <img src={img} alt={title} className={`img-textList ${!single ? "img-textList-small" : ""}`} />
+        <strong>{title}</strong>
       </>
     );
+    if(imgReplaceTitle){
+      Title = (
+        <>
+          <img src={img} alt={title} className={`img-textList ${!single ? "img-textList-small" : ""}`}/>
+        </>
+      );
+    }
   }
   if(url){
     Title = (
@@ -26,7 +34,9 @@ const TextList = ({ img = null,imgSmall=true, title, date, list, url }) => {
         viewTransitionName: title.trim().toLowerCase().replace(/\s+/g, "-"),
       }}
     >
-      {Title}
+      <div className={`textList-title ${single ? "textList-title-single" : ""}`}>
+        {Title}
+      </div>
       <div className="date">{date}</div>
       {list.length > 0 && (
         <ul>

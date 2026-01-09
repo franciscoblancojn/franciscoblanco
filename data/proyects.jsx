@@ -1,6 +1,7 @@
 export const DataProyects = [
   {
     img:"/proyects/fenextjs.svg",
+    imgReplaceTitle:true,
     title: "Fenextjs",
     short: [
       <i>
@@ -84,6 +85,7 @@ export const DataProyects = [
     description: [],
   },
   {
+    img:"/proyects/aveonline.png",
     title: "Aveonline",
     short: [
       <i>Un plugin para wordpress para gestionar envios.</i>,
@@ -115,6 +117,8 @@ export const DataProyects = [
     description: [],
   },
   {
+    img:"/proyects/xell.svg",
+    imgReplaceTitle:true,
     title: "Xell",
     short: [
       <i>
