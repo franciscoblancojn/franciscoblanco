@@ -1,10 +1,10 @@
 import Icon from "@/components/icon";
 
-const Back = ({ className = "", href = "/" }) => {
+const Back = ({ className = "", href = "/", has = "" }) => {
   return (
     <a
       className={`back ${className}`}
-      href={href}
+      href={href+`${has ? `#${has}`:""}`}
       style={{
         cursor: "pointer",
         marginBlock: "20px",

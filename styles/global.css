@@ -875,6 +875,19 @@ li:has(.print-force-break) {
 .textList {
   color: var(--color-5);
   margin-bottom: 35px;
+  position: relative;
+}
+.textList .has {
+  position: absolute;
+  top: -90px;
+  left: 0;
+  scale: 0;
+  opacity: 0;
+}
+@media (max-width: 766px) {
+  .textList .has {
+    top: -70px;
+  }
 }
 .textList strong {
   font-size: 1.2rem;

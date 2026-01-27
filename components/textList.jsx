@@ -29,11 +29,13 @@ const TextList = ({ img = null,single=false,imgReplaceTitle=false, title, date, 
   }
   return (
     <div
+      
       className="textList"
       style={{
         viewTransitionName: title.trim().toLowerCase().replace(/\s+/g, "-"),
       }}
     >
+      <div id={title.trim().toLowerCase().replace(/\s+/g, "-")} className="has"></div>
       <div className={`textList-title ${single ? "textList-title-single" : ""}`}>
         {Title}
       </div>

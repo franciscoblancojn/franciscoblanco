@@ -8,14 +8,14 @@ import { DataProyects } from "data/proyects";
 
 const index = ({ id }) => {
   const proyect = DataProyects.find(
-    (p) => p.title.toLowerCase() === `${id}`.toLowerCase()
+    (p) => p.title.toLowerCase() === `${id}`.toLowerCase(),
   );
   return (
     <>
       <Container className="content">
         <Row>
           <Col col={12} className="col-xl-12 col-lg-12">
-            <Back />
+            <Back has={proyect.title.trim().toLowerCase().replace(/\s+/g, "-")} />
             {proyect && (
               <TextList
                 title={proyect.title}

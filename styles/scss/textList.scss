@@ -1,6 +1,18 @@
 .textList {
   color: var(--color-5);
   margin-bottom: 35px;
+  position: relative;
+  .has{
+    
+    position: absolute;
+    top: -90px;
+    left: 0;
+    scale: 0;
+    opacity: 0;
+    @media (max-width: 766px) {
+      top: -70px;
+    }
+  }
   strong {
     font-size: 1.2rem;
   }
