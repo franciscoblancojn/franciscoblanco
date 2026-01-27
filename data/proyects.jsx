@@ -1,7 +1,7 @@
 export const DataProyects = [
   {
-    img:"/proyects/fenextjs.svg",
-    imgReplaceTitle:true,
+    img: "/proyects/fenextjs.svg",
+    imgReplaceTitle: true,
     title: "Fenextjs",
     short: [
       <i>
@@ -82,16 +82,48 @@ export const DataProyects = [
         </a>
       </>,
     ],
-    description: [],
+    description: [
+      <>
+        <b>Fenextjs</b> nace como una solución real a problemas repetitivos en
+        el desarrollo de aplicaciones React a gran escala. Tras años trabajando
+        en proyectos complejos, detecté la necesidad de contar con una base
+        sólida, reutilizable y bien estructurada que acelerara el desarrollo sin
+        sacrificar calidad.
+      </>,
+      <>
+        La librería está pensada para equipos y proyectos que buscan{" "}
+        <b>consistencia, mantenibilidad y velocidad</b>. Fenextjs estandariza la
+        forma de construir componentes, manejar estados, formularios, acciones y
+        flujos de datos, reduciendo errores comunes y mejorando la experiencia
+        del desarrollador.
+      </>,
+      <>
+        Uno de los principales enfoques de Fenextjs es la <b>escalabilidad</b>.
+        Cada componente y hook está diseñado para ser extensible, tipado y
+        desacoplado, permitiendo que los proyectos crezcan sin volverse
+        difíciles de mantener.
+      </>,
+      <>
+        Actualmente Fenextjs es utilizado como base en proyectos personales y
+        profesionales, sirviendo como núcleo para otras librerías y plataformas
+        más grandes, demostrando su robustez y flexibilidad en entornos reales.
+      </>,
+      <>
+        <b>Fenextjs</b> ha permitido reducir significativamente el tiempo de desarrollo en
+        nuevos proyectos, mejorar la coherencia visual y técnica entre equipos, y
+        establecer una base sólida que facilita el mantenimiento y la evolución del
+        código a largo plazo.
+      </>,
+    ],
   },
   {
-    img:"/proyects/aveonline.png",
+    img: "/proyects/aveonline.png",
     title: "Aveonline",
     short: [
-      <i>Un plugin para wordpress para gestionar envios.</i>,
+      <i>Un plugin para wordpress para gestionar envíos.</i>,
       <>
-        Aveonline es plugin para wordpress que desarrollé durante 1 años,
-        diseñado para gestionar envios desde Wordpress usando la plataforma de
+        Aveonline es plugin para wordpress,
+        diseñado para gestionar envíos desde Wordpress usando la plataforma de
         Aveonline de manera eficiente y clara.
       </>,
       <>
@@ -99,13 +131,13 @@ export const DataProyects = [
         <b>Aveonline</b> incluyen:
         <ul>
           <li>Configurar la cuenta de aveonline en Wordpress.</li>
-          <li>Configurar informacion de Productos para envios.</li>
+          <li>Configurar informacion de Productos para envíos.</li>
           <li>Muestra lista de Transportadoras a usar.</li>
-          <li>Permite gestionar si el envios es contraentrega</li>
+          <li>Permite gestionar si el envíos es contra entrega</li>
         </ul>
       </>,
       <>
-        La plugin de <b>Aveonline</b> está disponible en:{" "}
+        El plugin de <b>Aveonline</b> está disponible en:{" "}
         <a
           href="https://github.com/franciscoblancojn/aveonline-shipping"
           target="_blank"
@@ -114,11 +146,34 @@ export const DataProyects = [
         </a>
       </>,
     ],
-    description: [],
+    description: [
+      <>
+        <b>Aveonline</b> es un plugin de WordPress desarrollado para simplificar
+        la gestión de envíos en tiendas en línea, integrando de forma directa y
+        clara los servicios de la plataforma Aveonline dentro del ecosistema
+        WordPress.
+      </>,
+      <>
+        El objetivo principal del plugin fue eliminar procesos manuales y
+        reducir errores en la configuración de envíos, permitiendo a los
+        administradores gestionar transportadoras, productos y condiciones de
+        entrega desde un solo lugar.
+      </>,
+      <>
+        Durante su desarrollo desarrollé la lógica de integración con la API de{" "}
+        <b>Aveonline</b> y diseñé la experiencia de usuario, priorizando simplicidad,
+        estabilidad y facilidad de configuración.
+      </>,
+      <>
+        Este proyecto me permitió profundizar en el desarrollo de plugins para
+        WordPress, buenas prácticas de PHP, seguridad, manejo de estados y
+        consumo de APIs externas dentro de entornos CMS.
+      </>,
+    ],
   },
   {
-    img:"/proyects/xell.svg",
-    imgReplaceTitle:true,
+    img: "/proyects/xell.svg",
+    imgReplaceTitle: true,
     title: "Xell",
     short: [
       <i>
@@ -179,6 +234,31 @@ export const DataProyects = [
         </a>
       </>,
     ],
-    description: [],
+    description: [
+      <>
+        <b>Xell</b> es una plataforma empresarial completa diseñada para
+        centralizar la operación de negocios de distintos tamaños en una sola
+        solución digital, eliminando la necesidad de múltiples sistemas
+        desconectados.
+      </>,
+      <>
+        Durante más de 3 años participé activamente en el diseño, arquitectura y
+        desarrollo de la plataforma, abordando tanto el frontend como la lógica
+        de negocio, con un fuerte enfoque en <b>rendimiento</b>,{" "}
+        <b>usabilidad</b> y <b>seguridad</b>.
+      </>,
+      <>
+        Uno de los mayores retos de Xell fue manejar la complejidad de múltiples
+        módulos (CRM, inventarios, ventas, POS, cajas y reportes) manteniendo
+        una experiencia fluida. Para ello se implementó una arquitectura modular
+        basada en librerías reutilizables.
+      </>,
+      <>
+        Gracias a esta modularización, Xell logró escalar de forma ordenada,
+        facilitando nuevas funcionalidades, integraciones externas y
+        personalización según el tipo de negocio, sin comprometer la estabilidad
+        del sistema.
+      </>,
+    ],
   },
 ];
