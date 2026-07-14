@@ -141,6 +141,8 @@ const index = () => {
               title="Desarrollador Web, Aveonline"
               date="03/2025 - Actualidad"
               list={[
+                "Desarrollo de App en Shopify",
+                "Desarrollo de Integraciones con Chatrace",
                 "Desarrollo de Paginas Web en Nextjs",
                 "Desarrollo de Api con Nodejs",
                 "Desarrollo de Api con Laravel",
