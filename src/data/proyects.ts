@@ -27,7 +27,7 @@ export const DataProyects: DataProyect[] = [
     ],
   },
   {
-    img: "/proyects/aveonline.png",
+    img: "/proyects/aveonline.svg",
     title: "Aveonline",
     short: [
       `<i>Un plugin para wordpress para gestionar envíos.</i>`,
