@@ -1,5 +1,4 @@
 export interface DataProyect {
-  img: string;
   imgReplaceTitle?: boolean;
   title: string;
   short: string[];
@@ -8,7 +7,6 @@ export interface DataProyect {
 
 export const DataProyects: DataProyect[] = [
   {
-    img: "/proyects/fenextjs.svg",
     imgReplaceTitle: true,
     title: "Fenextjs",
     short: [
@@ -27,7 +25,6 @@ export const DataProyects: DataProyect[] = [
     ],
   },
   {
-    img: "/proyects/aveonline.svg",
     title: "Aveonline",
     short: [
       `<i>Un plugin para wordpress para gestionar envíos.</i>`,
@@ -43,7 +40,6 @@ export const DataProyects: DataProyect[] = [
     ],
   },
   {
-    img: "/proyects/xell.svg",
     imgReplaceTitle: true,
     title: "Xell",
     short: [

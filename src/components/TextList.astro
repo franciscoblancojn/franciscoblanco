@@ -13,22 +13,24 @@ interface Props {
 
 const { title, img = "", single = false, imgReplaceTitle = false, date = "", list, url = "" } = Astro.props;
 const vtName = sanitizeVTName(title);
-
-let titleContent = `<strong>${title}</strong>`;
-if (img && !imgReplaceTitle) {
-  titleContent = `<img src="${img}" alt="${title}" class="img-textList ${!single ? "img-textList-small" : ""}"/><strong>${title}</strong>`;
-} else if (img && imgReplaceTitle) {
-  titleContent = `<img src="${img}" alt="${title}" class="img-textList ${!single ? "img-textList-small" : ""}"/>`;
-}
-if (url) {
-  titleContent = `<a href="${url}" style="display:flex;align-items:center"><i class="fa fa-link" style="margin-right:10px"></i>${titleContent}</a>`;
-}
+const imgClass = ["img-textList", !single ? "img-textList-small" : ""].filter(Boolean).join(" ");
 ---
 <style set:html={`[data-vt="${vtName}"]{view-transition-name:${vtName}}`}></style>
 <div data-vt={vtName} class="textList">
   <div id={vtName} class="has"></div>
   <div class:list={["textList-title", { "textList-title-single": single }]}>
-    <Fragment set:html={titleContent}/>
+    {url && (
+      <a href={url} style="display:flex;align-items:center">
+        <i class="fa fa-link" style="margin-right:10px"></i>
+      </a>
+    )}
+    {Astro.slots.has("img") && !imgReplaceTitle && <div class:list={[imgClass]}><slot name="img" /></div>}
+    {Astro.slots.has("img") && !imgReplaceTitle && <strong>{title}</strong>}
+    {Astro.slots.has("img") && imgReplaceTitle && <div class:list={[imgClass]}><slot name="img" /></div>}
+    {!Astro.slots.has("img") && img && !imgReplaceTitle && <img src={img} alt={title} class:list={[imgClass]}/>}
+    {!Astro.slots.has("img") && img && !imgReplaceTitle && <strong>{title}</strong>}
+    {!Astro.slots.has("img") && img && imgReplaceTitle && <img src={img} alt={title} class:list={[imgClass]}/>}
+    {!Astro.slots.has("img") && !img && <strong>{title}</strong>}
   </div>
   <div class="date">{date}</div>
   {list.length > 0 && (

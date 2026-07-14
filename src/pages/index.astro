@@ -9,6 +9,15 @@ import { profileBio, socialLinks } from "../data/profile";
 import { techCompetence, specialties } from "../data/skills";
 import { workExperience } from "../data/experience";
 import { sanitizeVTName } from "../utils/sanitizeVTName";
+import FenextjsIcon from "../components/icons/Fenextjs.astro";
+import AveonlineIcon from "../components/icons/Aveonline.astro";
+import XellIcon from "../components/icons/Xell.astro";
+
+const svgMap: Record<string, any> = {
+  fenextjs: FenextjsIcon,
+  aveonline: AveonlineIcon,
+  xell: XellIcon,
+};
 
 const vtNames = [
   "perfil-profesional",
@@ -47,15 +56,19 @@ const vtStyles = vtNames.map((n) => `[data-vt="${n}"]{view-transition-name:${n}}
           </div>
         </div>
         <Title>Proyectos mas importantes</Title>
-        {DataProyects.map((proyecto) => (
-          <TextList
-            title={proyecto.title}
-            img={proyecto.img}
-            imgReplaceTitle={proyecto.imgReplaceTitle}
-            url={`/proyectos-mas-importantes/${sanitizeVTName(proyecto.title)}`}
-            list={proyecto.short}
-          />
-        ))}
+        {DataProyects.map((proyecto) => {
+          const SvgIcon = svgMap[sanitizeVTName(proyecto.title)];
+          return (
+            <TextList
+              title={proyecto.title}
+              imgReplaceTitle={proyecto.imgReplaceTitle}
+              url={`/proyectos-mas-importantes/${sanitizeVTName(proyecto.title)}`}
+              list={proyecto.short}
+            >
+              {SvgIcon && <SvgIcon slot="img" />}
+            </TextList>
+          );
+        })}
         <div class="print-force-break"></div>
       </div>
       <div class="col col-4 aside col-xl-12 col-lg-12">

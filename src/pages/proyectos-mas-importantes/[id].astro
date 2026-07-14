@@ -3,6 +3,15 @@ import Base from "../../layouts/Base.astro";
 import TextList from "../../components/TextList.astro";
 import { DataProyects } from "../../data/proyects";
 import { sanitizeVTName } from "../../utils/sanitizeVTName";
+import FenextjsIcon from "../../components/icons/Fenextjs.astro";
+import AveonlineIcon from "../../components/icons/Aveonline.astro";
+import XellIcon from "../../components/icons/Xell.astro";
+
+const svgMap: Record<string, any> = {
+  fenextjs: FenextjsIcon,
+  aveonline: AveonlineIcon,
+  xell: XellIcon,
+};
 
 export function getStaticPaths() {
   return DataProyects.map((project) => ({
@@ -28,15 +37,19 @@ const vtStyles = vtName ? `[data-vt="${vtName}"]{view-transition-name:${vtName}}
             Atras
           </a>
         )}
-        {proyect && (
-          <TextList
-            title={proyect.title}
-            img={proyect.img}
-            single={true}
-            imgReplaceTitle={proyect.imgReplaceTitle}
-            list={[...proyect.short, ...proyect.description]}
-          />
-        )}
+        {proyect && (() => {
+          const SvgIcon = svgMap[vtName];
+          return (
+            <TextList
+              title={proyect.title}
+              single={true}
+              imgReplaceTitle={proyect.imgReplaceTitle}
+              list={[...proyect.short, ...proyect.description]}
+            >
+              {SvgIcon && <SvgIcon slot="img" />}
+            </TextList>
+          );
+        })()}
         <div class="print-force-break"></div>
       </div>
     </div>
