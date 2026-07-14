@@ -2,9 +2,14 @@
 
 Sitio web de portafolio personal construido con [Astro](https://astro.build/). Genera HTML estático puro sin JavaScript.
 
+## Requisitos
+
+- Node.js >= 22.12
+
 ## Inicio rápido
 
 ```bash
+nvm use 22.12
 npm install
 npm run dev
 ```
@@ -23,26 +28,31 @@ Abre [http://localhost:4321](http://localhost:4321) en el navegador.
 
 ```
 src/
-├── layouts/Base.astro          Layout base (head, banner, footer)
+├── layouts/Base.astro              Layout base (head, banner, footer)
 ├── pages/
-│   ├── index.astro             Página principal
-│   └── proyectos-mas-importantes/[id].astro
-│                               Páginas de detalle de proyectos
+│   ├── index.astro                 Página principal
+│   └── proyectos-mas-importantes/
+│       └── [id].astro              Páginas de detalle de proyectos
 ├── components/
-│   ├── TextList.astro          Lista de contenido con VT
-│   ├── Title.astro             Títulos de sección con VT
-│   ├── PorcentajeCircular.astro
-│   ├── PorcentajeLinear.astro
-│   └── Footer.astro
+│   ├── TextList.astro              Lista de contenido con View Transitions
+│   ├── Title.astro                 Títulos de sección con View Transitions
+│   ├── PorcentajeCircular.astro    Gráfico circular animado
+│   ├── PorcentajeLinear.astro      Barra de progreso animada
+│   ├── Footer.astro
+│   └── icons/
+│       ├── Fenextjs.astro          Logo SVG inline
+│       ├── Aveonline.astro         Logo SVG inline
+│       └── Xell.astro              Logo SVG inline
 ├── data/
-│   ├── profile.ts              Biografía y redes sociales
-│   ├── proyects.ts             Datos de proyectos
-│   ├── skills.ts               Habilidades técnicas
-│   └── experience.ts           Experiencia laboral
+│   ├── profile.ts                  Biografía y redes sociales
+│   ├── proyects.ts                 Datos de proyectos
+│   ├── skills.ts                   Habilidades técnicas
+│   └── experience.ts               Experiencia laboral
 ├── styles/
-│   └── global.scss             Estilos globales (SCSS)
+│   ├── global.scss                 Entry SCSS
+│   └── scss/                       Parciales SCSS
 └── utils/
-    └── sanitizeVTName.ts       Utilidad para View Transitions
+    └── sanitizeVTName.ts           Utilidad para View Transitions
 ```
 
 ## Deploy en Vercel
