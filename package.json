@@ -2,26 +2,16 @@
   "name": "portafolio",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "export": "next export",
-    "start": "next start",
-    "sass": "sass ./styles/global.scss:./styles/global.css",
-    "clean": "rm -rf .next out",
-    "flb": "npm run clean && npm run sass && npm run build && npm run export"
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
   },
   "dependencies": {
-    "aos": "^2.3.4",
-    "memory-cache": "^0.2.0",
-    "next": "13.5.1",
-    "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "astro": "^5.12.0"
   },
   "devDependencies": {
-    "@types/node": "^26.1.1",
-    "@types/react": "^19.2.17",
-    "@types/react-dom": "^19.2.3",
-    "typescript": "5"
+    "sass-embedded": "^1.100.0"
   }
 }

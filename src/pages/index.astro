@@ -1,0 +1,117 @@
+---
+import Base from "../layouts/Base.astro";
+import TextList from "../components/TextList.astro";
+import Title from "../components/Title.astro";
+import PorcentajeCircular from "../components/PorcentajeCircular.astro";
+import PorcentajeLinear from "../components/PorcentajeLinear.astro";
+import { DataProyects } from "../data/proyects";
+import { profileBio, socialLinks } from "../data/profile";
+import { techCompetence, specialties } from "../data/skills";
+import { workExperience } from "../data/experience";
+import { sanitizeVTName } from "../utils/sanitizeVTName";
+
+const vtNames = [
+  "perfil-profesional",
+  "proyectos-mas-importantes",
+  ...DataProyects.map((p) => sanitizeVTName(p.title)),
+  "competencia-tic",
+  "especialidades",
+  "experiencia-laboral",
+  ...workExperience.map((e) => sanitizeVTName(e.title)),
+];
+const vtStyles = vtNames.map((n) => `[data-vt="${n}"]{view-transition-name:${n}}`).join("\n");
+---
+<Base vtStyles={vtStyles}>
+  <div class="content container">
+    <div class="row">
+      <div class="col col-8 col-xl-12 col-lg-12">
+        <div class="row">
+          <div class="col col-8 col-lg-6 col-md-12 no-breack-print">
+            <Title>Perfil Profesional</Title>
+            {profileBio.map((p) => (
+              <p><Fragment set:html={p}/></p>
+            ))}
+          </div>
+          <div class="col col-4 col-lg-6 col-md-12 no-breack-print">
+            <div>
+              <div class="h md-none" style="height:80px"></div>
+              {socialLinks.map((link) => (
+                <div class:list={["rs", link.className]}>
+                  <a href={link.href}>
+                    <i class={link.icon} style="margin-right:5px"></i>
+                    {link.text}
+                  </a>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+        <Title>Proyectos mas importantes</Title>
+        {DataProyects.map((proyecto) => (
+          <TextList
+            title={proyecto.title}
+            img={proyecto.img}
+            imgReplaceTitle={proyecto.imgReplaceTitle}
+            url={`/proyectos-mas-importantes/${sanitizeVTName(proyecto.title)}`}
+            list={proyecto.short}
+          />
+        ))}
+        <div class="print-force-break"></div>
+      </div>
+      <div class="col col-4 aside col-xl-12 col-lg-12">
+        <div class="print-2-col">
+          <div>
+            <Title>Competencia Tic</Title>
+            {techCompetence.map((skill) => (
+              <PorcentajeLinear p={skill.p} name={skill.name}/>
+            ))}
+          </div>
+          <div class="h no-print" style="height:30px"></div>
+          <div>
+            <Title>Especialidades</Title>
+            <div class="container">
+              <div class="row">
+                {specialties.map((skill) => (
+                  <PorcentajeCircular p={skill.p} name={skill.name}/>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+        <Title>Experiencia Laboral</Title>
+        {workExperience.map((exp) => (
+          <TextList
+            title={exp.title}
+            date={exp.date}
+            list={exp.tasks}
+          />
+        ))}
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col col-4 col-lg-3 col-md-12 no-breack-print">
+          Francisco Blanco
+        </div>
+        <div class="col col-4 col-lg-5 col-md-12 no-breack-print">
+          <div class="rs email">
+            <a href="mailto:blancofrancisco34@gmail.com">
+              <i class="fas fa-envelope" style="margin-right:5px"></i>
+              blancofrancisco34@gmail.com
+            </a>
+          </div>
+        </div>
+        <div class="col col-4 col-lg-4 col-md-12 no-breack-print">
+          <div class="rs whatsapp">
+            <a href="https://api.whatsapp.com/send?phone=573103557200">
+              <i class="fab fa-whatsapp" style="margin-right:5px"></i>
+              +57 310 355 7200
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</Base>

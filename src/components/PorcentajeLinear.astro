@@ -1,0 +1,16 @@
+---
+interface Props {
+  name: string;
+  p: number;
+  className?: string;
+}
+
+const { name, p, className = "" } = Astro.props;
+---
+<div class:list={["porcentajeLinear", className]}>
+  <div class="name">
+    {name}
+    <span>{p}%</span>
+  </div>
+  <div class="line" style={`--p:${p}%`}></div>
+</div>

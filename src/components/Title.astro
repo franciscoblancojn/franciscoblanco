@@ -1,0 +1,16 @@
+---
+import { sanitizeVTName } from "../utils/sanitizeVTName";
+
+interface Props {
+  className?: string;
+}
+
+const { className = "" } = Astro.props;
+const slotText = await Astro.slots.render("default");
+const vtName = sanitizeVTName(slotText);
+---
+<style set:html={`[data-vt="${vtName}"]{view-transition-name:${vtName}}`}></style>
+<h3 data-vt={vtName} class:list={["title", className]}>
+  <i class="fas fa-caret-right" style="margin-right:20px"></i>
+  <slot/>
+</h3>

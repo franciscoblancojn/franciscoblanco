@@ -1,0 +1,21 @@
+---
+interface Props {
+  name: string;
+  p: number;
+  className?: string;
+}
+
+const { name, p, className = "" } = Astro.props;
+const d1 = p > 50 ? -45 : 135 - p * 3.6;
+const d2 = p <= 50 ? 135 : 135 - (p - 50) * 3.6;
+---
+<div class:list={["porcentajeCircular", className]}>
+  <div class="c">
+    <span class="cap cap1" style={`--deg:${d1}deg`}></span>
+    <span class="cap cap2" style={`--deg:${d2}deg`}></span>
+  </div>
+  <div class="name">
+    {name}
+    <span>{p}%</span>
+  </div>
+</div>
