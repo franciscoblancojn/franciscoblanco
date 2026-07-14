@@ -1,9 +1,10 @@
+import React from "react";
 import Container from "@/components/container";
 import Row from "@/components/row";
 import Col from "@/components/col";
 import RS from "@/components/rs";
 
-const Footer = () => {
+const Footer: React.FC = () => {
     return (
         <footer>
             <Container>

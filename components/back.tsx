@@ -1,6 +1,13 @@
+import React from "react";
 import Icon from "@/components/icon";
 
-const Back = ({ className = "", href = "/", has = "" }) => {
+interface BackProps {
+  className?: string;
+  href?: string;
+  has?: string;
+}
+
+const Back: React.FC<BackProps> = ({ className = "", href = "/", has = "" }) => {
   return (
     <a
       className={`back ${className}`}

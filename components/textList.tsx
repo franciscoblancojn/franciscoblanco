@@ -1,7 +1,18 @@
+import React from "react";
 import Icon from "./icon";
 
-const TextList = ({ img = null,single=false,imgReplaceTitle=false, title, date, list, url }) => {
-  let Title = <strong>{title}</strong>;
+interface TextListProps {
+  img?: string;
+  single?: boolean;
+  imgReplaceTitle?: boolean;
+  title: string;
+  date?: string;
+  list: (string | React.JSX.Element)[];
+  url?: string;
+}
+
+const TextList: React.FC<TextListProps> = ({ img = null,single=false,imgReplaceTitle=false, title, date, list, url }) => {
+  let Title: React.JSX.Element = <strong>{title}</strong>;
   if(img){
     Title = (
       <>

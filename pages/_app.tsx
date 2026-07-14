@@ -1,3 +1,5 @@
+import React from "react";
+import type { AppProps } from "next/app";
 import Head from "next/head";
 import Banner from "@/components/banner";
 import Container from "@/components/container";
@@ -7,7 +9,7 @@ import RS from "@/components/rs";
 
 import "../styles/global.css";
 
-function MyApp({ Component, pageProps }) {
+function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
@@ -29,7 +31,7 @@ function MyApp({ Component, pageProps }) {
           rel="stylesheet"
           href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
           integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
-          crossorigin="anonymous"
+          crossOrigin="anonymous"
         />
       </Head>
       <Banner>

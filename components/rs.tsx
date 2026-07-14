@@ -1,6 +1,14 @@
+import React from "react";
 import Icon from '@/components/icon'
 
-const RS = ({text,href,className="",icon=""}) => {
+interface RSProps {
+  text: string;
+  href: string;
+  className?: string;
+  icon?: string;
+}
+
+const RS: React.FC<RSProps> = ({text,href,className="",icon=""}) => {
     return (
         <div className={`rs ${className}`}>
           <a href={href} target="blank">

@@ -1,6 +1,12 @@
+import React from "react";
 import Icon from "@/components/icon";
 
-const Title = ({ children, className = "" }) => {
+interface TitleProps {
+  children?: React.ReactNode;
+  className?: string;
+}
+
+const Title: React.FC<TitleProps> = ({ children, className = "" }) => {
   return (
     <h3
       className={`title ${className}`}

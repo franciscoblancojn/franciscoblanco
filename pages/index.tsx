@@ -1,3 +1,5 @@
+import React from "react";
+import type { NextPage } from "next";
 import Container from "@/components/container";
 import Col from "@/components/col";
 import Row from "@/components/row";
@@ -10,7 +12,7 @@ import PorcentajeLinear from "@/components/procentajeLinear";
 import Footer from "@/components/footer";
 import { DataProyects } from "data/proyects";
 
-const index = () => {
+const index: NextPage = () => {
   return (
     <>
       <Container className="content">
@@ -95,7 +97,6 @@ const index = () => {
                 </div>
               </Col>
             </Row>
-            {/* <H h="40px" /> */}
             <Title>Proyectos mas importantes</Title>
             {
               DataProyects.map((proyecto) => (

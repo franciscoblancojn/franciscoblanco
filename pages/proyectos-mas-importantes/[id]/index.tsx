@@ -1,3 +1,5 @@
+import React from "react";
+import type { GetStaticPaths, GetStaticProps, NextPage } from "next";
 import Container from "@/components/container";
 import Col from "@/components/col";
 import Row from "@/components/row";
@@ -6,7 +8,11 @@ import Footer from "@/components/footer";
 import Back from "@/components/back";
 import { DataProyects } from "data/proyects";
 
-const index = ({ id }) => {
+interface ProyectoPageProps {
+  id: string;
+}
+
+const index: NextPage<ProyectoPageProps> = ({ id }) => {
   const proyect = DataProyects.find(
     (p) => p.title.toLowerCase() === `${id}`.toLowerCase(),
   );
@@ -15,7 +21,9 @@ const index = ({ id }) => {
       <Container className="content">
         <Row>
           <Col col={12} className="col-xl-12 col-lg-12">
-            <Back has={proyect.title.trim().toLowerCase().replace(/\s+/g, "-")} />
+            {proyect && (
+              <Back has={proyect.title.trim().toLowerCase().replace(/\s+/g, "-")} />
+            )}
             {proyect && (
               <TextList
                 title={proyect.title}
@@ -33,7 +41,8 @@ const index = ({ id }) => {
     </>
   );
 };
-export const getStaticPaths = async (context) => {
+
+export const getStaticPaths: GetStaticPaths = async () => {
   const paths = DataProyects.map((project) => ({
     params: {
       id: project.title.toLowerCase(),
@@ -46,8 +55,8 @@ export const getStaticPaths = async (context) => {
   };
 };
 
-export const getStaticProps = async (context) => {
-  const id = context.params.id;
+export const getStaticProps: GetStaticProps<ProyectoPageProps> = async (context) => {
+  const id = context.params?.id as string;
   return {
     props: {
       id,

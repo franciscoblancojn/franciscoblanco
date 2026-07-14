@@ -1,15 +1,21 @@
-// Next.js API route support: https://nextjs.org/docs/api-routes/introduction
+import type { NextApiRequest, NextApiResponse } from "next";
 import cacheData from "memory-cache";
 
 const KEY_CACHE = "KEY_CACHE";
-export default (req, res) => {
-  const ID = req?.query?.id ?? KEY_CACHE;
-  // 🔹 Permitir CORS
-  res.setHeader("Access-Control-Allow-Origin", "*"); // o especifica tu dominio si quieres restringir
+
+type ResponseData = {
+  save?: string;
+  body?: unknown;
+  cache?: unknown;
+};
+
+export default (req: NextApiRequest, res: NextApiResponse<ResponseData>) => {
+  const ID = (req?.query?.id as string) ?? KEY_CACHE;
+
+  res.setHeader("Access-Control-Allow-Origin", "*");
   res.setHeader("Access-Control-Allow-Methods", "GET, POST, OPTIONS");
   res.setHeader("Access-Control-Allow-Headers", "Content-Type, Authorization");
 
-  // 🔹 Manejar preflight (OPTIONS)
   if (req.method === "OPTIONS") {
     return res.status(200).end();
   }
@@ -34,6 +40,6 @@ export default (req, res) => {
   if (req?.query?.clear == "1") {
     cacheData.del(ID);
   }
-  res.headers = { "Content-Type": "application/json" };
-  res.json({ cache }, { headers: { "Content-Type": "application/json" } });
+  res.setHeader("Content-Type", "application/json");
+  res.json({ cache });
 };
