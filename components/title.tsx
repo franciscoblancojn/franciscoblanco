@@ -1,5 +1,7 @@
 import React from "react";
+import Head from "next/head";
 import Icon from "@/components/icon";
+import { sanitizeVTName } from "@/utils/sanitizeVTName";
 
 interface TitleProps {
   children?: React.ReactNode;
@@ -7,19 +9,17 @@ interface TitleProps {
 }
 
 const Title: React.FC<TitleProps> = ({ children, className = "" }) => {
+  const vtName = sanitizeVTName(`${children}`);
   return (
-    <h3
-      className={`title ${className}`}
-      style={{
-        viewTransitionName: `${children}`
-          .trim()
-          .toLowerCase()
-          .replace(/\s+/g, "-"),
-      }}
-    >
-      <Icon marginRight="20px">fas fa-caret-right</Icon>
-      {children}
-    </h3>
+    <>
+      <Head>
+        <style>{`[data-vt="${vtName}"]{view-transition-name:${vtName}}`}</style>
+      </Head>
+      <h3 data-vt={vtName} className={`title ${className}`}>
+        <Icon marginRight="20px">fas fa-caret-right</Icon>
+        {children}
+      </h3>
+    </>
   );
 };
 
