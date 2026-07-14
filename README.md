@@ -1,34 +1,60 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Portafolio - Francisco Blanco
 
-## Getting Started
+Sitio web de portafolio personal construido con [Astro](https://astro.build/). Genera HTML estático puro sin JavaScript.
 
-First, run the development server:
+## Inicio rápido
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Abre [http://localhost:4321](http://localhost:4321) en el navegador.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## Scripts
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+| Comando | Descripción |
+|---------|-------------|
+| `npm run dev` | Servidor de desarrollo |
+| `npm run build` | Genera el sitio estático en `dist/` |
+| `npm run preview` | Previsualiza el build en local |
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Estructura del proyecto
 
-## Learn More
+```
+src/
+├── layouts/Base.astro          Layout base (head, banner, footer)
+├── pages/
+│   ├── index.astro             Página principal
+│   └── proyectos-mas-importantes/[id].astro
+│                               Páginas de detalle de proyectos
+├── components/
+│   ├── TextList.astro          Lista de contenido con VT
+│   ├── Title.astro             Títulos de sección con VT
+│   ├── PorcentajeCircular.astro
+│   ├── PorcentajeLinear.astro
+│   └── Footer.astro
+├── data/
+│   ├── profile.ts              Biografía y redes sociales
+│   ├── proyects.ts             Datos de proyectos
+│   ├── skills.ts               Habilidades técnicas
+│   └── experience.ts           Experiencia laboral
+├── styles/
+│   └── global.scss             Estilos globales (SCSS)
+└── utils/
+    └── sanitizeVTName.ts       Utilidad para View Transitions
+```
 
-To learn more about Next.js, take a look at the following resources:
+## Deploy en Vercel
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+El build genera archivos estáticos en `dist/`. Configura el proyecto en Vercel con:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- **Framework Preset:** Astro
+- **Build Command:** `npm run build`
+- **Output Directory:** `dist`
 
-## Deploy on Vercel
+## Tecnologías
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- [Astro](https://astro.build/) - Framework estático
+- [SCSS](https://sass-lang.com/) - Estilos
+- [View Transitions API](https://developer.mozilla.org/en-US/docs/Web/API/View_Transitions_API) - Animaciones entre páginas (CSS puro)
